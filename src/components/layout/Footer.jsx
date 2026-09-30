@@ -44,17 +44,22 @@ export default function Footer() {
     try {
       const API_BASE_URL =
         import.meta.env.VITE_API_BASE_URL || "https://dashboard.inmarco.id";
-      const API_KEY =
-        import.meta.env.VITE_CONTACT_API_KEY ||
-        "k9Xm2L8pQ1zW5vR7tY4uN3iB6oC8sA0e";
+      const API_KEY = import.meta.env.VITE_CONTACT_API_KEY;
+
+      // Buat objek headers secara dinamis
+      const headers = {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      };
+
+      // Hanya tambahkan header X-API-KEY jika tersimpan di Environment Variables (.env / Vercel)
+      if (API_KEY) {
+        headers["X-API-KEY"] = API_KEY;
+      }
 
       const response = await fetch(`${API_BASE_URL}/api/contact`, {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-          "X-API-KEY": API_KEY,
-        },
+        headers,
         body: JSON.stringify({
           name: formData.name,
           phone: formData.phone,
