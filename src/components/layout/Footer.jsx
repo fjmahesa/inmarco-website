@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import FadeInSection from "../common/FadeInSection";
 
 export default function Footer() {
@@ -18,12 +18,23 @@ export default function Footer() {
     message: "",
   });
 
+  // Tutup modal dengan tombol Escape
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape" && modal.show) {
+        closeModal();
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [modal.show]);
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const closeModal = () => {
-    setModal({ ...modal, show: false });
+    setModal((prev) => ({ ...prev, show: false }));
   };
 
   const handleSubmit = async (e) => {
@@ -33,13 +44,16 @@ export default function Footer() {
     try {
       const API_BASE_URL =
         import.meta.env.VITE_API_BASE_URL || "https://dashboard.inmarco.id";
+      const API_KEY =
+        import.meta.env.VITE_CONTACT_API_KEY ||
+        "k9Xm2L8pQ1zW5vR7tY4uN3iB6oC8sA0e";
 
       const response = await fetch(`${API_BASE_URL}/api/contact`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json",
-          "X-API-KEY": "k9Xm2L8pQ1zW5vR7tY4uN3iB6oC8sA0e",
+          "X-API-KEY": API_KEY,
         },
         body: JSON.stringify({
           name: formData.name,
@@ -53,7 +67,10 @@ export default function Footer() {
 
       const result = await response.json();
 
-      if (result.success) {
+      if (
+        response.ok &&
+        (result.success || response.status === 200 || response.status === 201)
+      ) {
         setFormData({
           name: "",
           phone: "",
@@ -66,6 +83,7 @@ export default function Footer() {
           success: true,
           title: "Pesan Terkirim!",
           message:
+            result.message ||
             "Terima kasih telah menghubungi kami. Kami akan segera merespons pesan Anda.",
         });
       } else {
@@ -73,7 +91,9 @@ export default function Footer() {
           show: true,
           success: false,
           title: "Gagal Mengirim",
-          message: result.message || "Gagal mengirim pesan. Silakan coba lagi.",
+          message:
+            result.message ||
+            "Gagal mengirim pesan. Silakan periksa kembali data Anda.",
         });
       }
     } catch (err) {
@@ -82,7 +102,8 @@ export default function Footer() {
         show: true,
         success: false,
         title: "Terjadi Kesalahan",
-        message: "Terjadi masalah koneksi. Silakan periksa jaringan Anda.",
+        message:
+          "Terjadi masalah koneksi ke server. Silakan periksa jaringan Anda.",
       });
     } finally {
       setLoading(false);
@@ -351,8 +372,14 @@ export default function Footer() {
 
       {/* POP-OUT MODAL NOTIFIKASI */}
       {modal.show && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-navy-950/80 backdrop-blur-sm animate-fade-in">
-          <div className="bg-navy-900 border border-slate-800 rounded-2xl p-6 sm:p-8 max-w-md w-full shadow-2xl text-center space-y-4">
+        <div
+          onClick={closeModal}
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-navy-950/80 backdrop-blur-sm animate-fade-in"
+        >
+          <div
+            onClick={(e) => e.stopPropagation()}
+            className="bg-navy-900 border border-slate-800 rounded-2xl p-6 sm:p-8 max-w-md w-full shadow-2xl text-center space-y-4 relative"
+          >
             <div
               className={`w-14 h-14 mx-auto rounded-full flex items-center justify-center ${
                 modal.success
