@@ -231,7 +231,7 @@ export default function DigitalEcosystemSection() {
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
               Membangun komunikasi yang konsisten dan terukur di tengah dinamika
-              perkembangan lanskap digital[cite: 13].
+              perkembangan lanskap digital.
             </p>
           </div>
         </FadeInSection>

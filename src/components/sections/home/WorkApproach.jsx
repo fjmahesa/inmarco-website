@@ -162,7 +162,7 @@ export default function WorkApproach() {
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
               Metodologi 6 langkah terstruktur PT. Global Inmarco Sejahtera
               untuk memastikan setiap proyek berjalan terukur, profesional, dan
-              memberikan dampak nyata[cite: 20].
+              memberikan dampak nyata.
             </p>
           </div>
         </FadeInSection>

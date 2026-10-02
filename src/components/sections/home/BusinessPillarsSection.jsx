@@ -71,7 +71,7 @@ export default function BusinessPillarsSection() {
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
               Empat pilar utama layanan PT. Global Inmarco Sejahtera yang saling
               terintegrasi untuk mendukung pertumbuhan instansi dan perusahaan
-              Anda[cite: 10].
+              Anda.
             </p>
           </div>
         </FadeInSection>
