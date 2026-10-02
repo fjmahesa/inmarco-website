@@ -1,8 +1,6 @@
 import FadeInSection from "../../common/FadeInSection";
 
 const corporateLogos = [
-  { name: "Bank Sumsel Babel", src: "/banksumselbabel.webp" },
-  { name: "Tirta Bhagasasi", src: "/tirtabhagasi.webp" },
   { name: "Nusantara Infrastructure", src: "/nusantara-infrastruktur.webp" },
   { name: "BII Maybank", src: "/biimaybank.webp" },
   { name: "Orico Balimor Finance", src: "/client-1.webp" },

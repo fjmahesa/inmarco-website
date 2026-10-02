@@ -1,11 +1,8 @@
 import FadeInSection from "../../common/FadeInSection";
 
 const governmentLogos = [
-  { name: "Kota Depok", src: "/kotadepok.webp" },
-  { name: "Kabupaten Cianjur", src: "/kab.cianjur.webp" },
   { name: "Kemkominfo / Komdigi", src: "/komdigi.webp" },
   { name: "Bank Indonesia", src: "/BI.webp" },
-  { name: "Koperasi Indonesia", src: "/koperasiindonesia.webp" },
   { name: "Kemenko Perekonomian", src: "/menkoperekonomian.webp" },
   { name: "Dinas Perhubungan", src: "/dishub.webp" },
   { name: "Badan Pusat Statistik", src: "/bps.webp" },
