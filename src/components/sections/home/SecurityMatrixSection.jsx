@@ -120,8 +120,8 @@ export default function SecurityMatrixSection() {
               Security Services Unit
             </span>
             <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-white leading-tight">
-              Matriks Keamanan Terpadu{" "}
-              <span className="text-sky-400">360°</span>
+              Keamanan Berbasis Teknologi dan{" "}
+              <span className="text-sky-400">Deteksi</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
               Integrasi sempurna antara kedisiplinan sumber daya manusia,

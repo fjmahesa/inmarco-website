@@ -25,14 +25,14 @@ export default function HomePage() {
       <main>
         <HeroSection />
         <AboutUsBrief />
-        <VisionMissionSection />
+        {/* <VisionMissionSection /> */}
         <BusinessPillarsSection />
         <MiceServicesSection />
         <ConsultingStrategySection />
         <DigitalEcosystemSection />
         <SecurityServicesSection />
         <SecurityMatrixSection />
-        <WorkApproach />
+        {/* <WorkApproach /> */}
         <TrustTrackRecordSection />
 
         {/* <Services /> */}
@@ -42,7 +42,7 @@ export default function HomePage() {
         <PemdaBumdLogos />
         <EducationLogos />
         <CorporateLogos />
-        <SustainableCommitmentSection />
+        {/* <SustainableCommitmentSection /> */}
       </main>
     </div>
   );

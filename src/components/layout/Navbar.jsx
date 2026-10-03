@@ -1,76 +1,89 @@
 import { useState, useEffect } from "react";
-import NavDropdown from "./NavDropdown";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  // State khusus untuk toggle dropdown sub-menu di Mobile
-  const [isMobileProjectOpen, setIsMobileProjectOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
+      const currentScrollY = window.scrollY;
+
+      // Cek apakah halaman di-scroll melewati batas atas (20px)
+      setIsScrolled(currentScrollY > 20);
+
+      // Logika Sembunyi/Muncul Navbar:
+      // Jika di paling atas -> selalu muncul
+      // Jika scroll ke bawah -> sembunyikan
+      // Jika scroll ke atas -> tampilkan
+      if (currentScrollY <= 0) {
+        setIsVisible(true);
+      } else if (currentScrollY > lastScrollY && currentScrollY > 80) {
+        setIsVisible(false); // Sembunyikan saat scroll ke bawah
+        setIsMobileMenuOpen(false); // Tutup drawer mobile saat di-scroll
+      } else if (currentScrollY < lastScrollY) {
+        setIsVisible(true); // Munculkan saat scroll ke atas
+      }
+
+      setLastScrollY(currentScrollY);
     };
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [lastScrollY]);
 
-  const projectSubMenu = [
-    { label: "Events", href: "#events" },
-    { label: "Education & Training", href: "#education" },
-    { label: "Package Tour", href: "#tour" },
-  ];
+  // Helper style untuk menandai menu yang sedang aktif
+  const navLinkStyle = ({ isActive }) =>
+    `text-sm font-semibold transition-colors ${
+      isActive
+        ? "text-blue-600 font-bold"
+        : "text-slate-700 hover:text-blue-600"
+    }`;
+
+  const mobileNavLinkStyle = ({ isActive }) =>
+    `block py-2 text-sm font-semibold transition-colors ${
+      isActive
+        ? "text-blue-600 font-bold"
+        : "text-slate-700 hover:text-blue-600"
+    }`;
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 transform ${
+        isVisible ? "translate-y-0" : "-translate-y-full"
+      } ${
         isScrolled
           ? "bg-white/90 backdrop-blur-md border-b border-slate-100 shadow-sm py-3"
-          : "bg-white py-5"
+          : "bg-white py-4"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          {/* Logo Brand */}
-          <a href="#" className="flex items-center gap-2 group">
-            <span className="text-2xl font-extrabold tracking-tight text-navy-900 group-hover:text-blue-600 transition-colors">
-              INMARCO
-              <span className="text-blue-600 group-hover:text-navy-900">
-                .ID
-              </span>
-            </span>
-          </a>
+          {/* Logo Gambar Website */}
+          <Link to="/" className="flex items-center gap-2 group">
+            <img
+              src="/inmarco_logo.png"
+              alt="INMARCO.ID"
+              className="h-9 sm:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+            />
+          </Link>
 
-          {/* Desktop Navigation */}
+          {/* Desktop Navigation Menu */}
           <nav className="hidden md:flex items-center gap-8">
-            <a
-              href="#"
-              className="text-sm font-semibold text-slate-700 hover:text-blue-600 transition-colors"
-            >
+            <NavLink to="/" className={navLinkStyle}>
               Home
-            </a>
-            <a
-              href="#blog"
-              className="text-sm font-semibold text-slate-700 hover:text-blue-600 transition-colors"
-            >
-              Blog
-            </a>
-            <a
-              href="#about"
-              className="text-sm font-semibold text-slate-700 hover:text-blue-600 transition-colors"
-            >
+            </NavLink>
+            <NavLink to="/about" className={navLinkStyle}>
               About Us
-            </a>
+            </NavLink>
             <a
               href="#service"
               className="text-sm font-semibold text-slate-700 hover:text-blue-600 transition-colors"
             >
               Service
             </a>
-
-            {/* Dropdown Project Desktop */}
-            <NavDropdown title="Project" items={projectSubMenu} />
-
             <a
               href="#client"
               className="text-sm font-semibold text-slate-700 hover:text-blue-600 transition-colors"
@@ -123,27 +136,20 @@ export default function Navbar() {
         {/* Mobile Navigation Drawer */}
         {isMobileMenuOpen && (
           <div className="md:hidden mt-4 pt-4 pb-6 px-4 bg-white border border-slate-100 rounded-2xl shadow-xl space-y-2 animate-fade-in">
-            <a
-              href="#"
+            <NavLink
+              to="/"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="block py-2 text-sm font-semibold text-slate-700 hover:text-blue-600"
+              className={mobileNavLinkStyle}
             >
               Home
-            </a>
-            <a
-              href="#blog"
+            </NavLink>
+            <NavLink
+              to="/about"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="block py-2 text-sm font-semibold text-slate-700 hover:text-blue-600"
-            >
-              Blog
-            </a>
-            <a
-              href="#about"
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="block py-2 text-sm font-semibold text-slate-700 hover:text-blue-600"
+              className={mobileNavLinkStyle}
             >
               About Us
-            </a>
+            </NavLink>
             <a
               href="#service"
               onClick={() => setIsMobileMenuOpen(false)}
@@ -151,53 +157,6 @@ export default function Navbar() {
             >
               Service
             </a>
-
-            {/* Mobile Project Accordion / Toggleable Dropdown */}
-            <div className="py-1">
-              <button
-                onClick={() => setIsMobileProjectOpen(!isMobileProjectOpen)}
-                className="w-full flex items-center justify-between py-2 text-sm font-semibold text-slate-700 hover:text-blue-600 focus:outline-none"
-              >
-                <span>Project</span>
-                <svg
-                  className={`w-4 h-4 transition-transform duration-200 ${
-                    isMobileProjectOpen
-                      ? "rotate-180 text-blue-600"
-                      : "text-slate-400"
-                  }`}
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </button>
-
-              {/* Sub-menu Mobile yang dapat di-toggle */}
-              {isMobileProjectOpen && (
-                <div className="mt-1 pl-3 border-l-2 border-navy-900 space-y-1 my-1 animate-fade-in">
-                  {projectSubMenu.map((sub, idx) => (
-                    <a
-                      key={idx}
-                      href={sub.href}
-                      onClick={() => {
-                        setIsMobileMenuOpen(false);
-                        setIsMobileProjectOpen(false);
-                      }}
-                      className="block py-2 px-3 text-xs font-bold text-slate-600 hover:text-white hover:bg-navy-900 rounded-lg transition-all"
-                    >
-                      {sub.label}
-                    </a>
-                  ))}
-                </div>
-              )}
-            </div>
-
             <a
               href="#client"
               onClick={() => setIsMobileMenuOpen(false)}

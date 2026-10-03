@@ -37,7 +37,7 @@ const slides = [
     id: 3,
     badge: "Jasa Pengamanan Swasta",
     subtitle: "Proteksi Aset, SDM Disiplin & Teknologi Deteksi",
-    title: "Matriks Keamanan Terpadu 360°",
+    title: "Jasa Pengamanan Swasta",
     description:
       "Penyediaan Satpam profesional, Tenaga Ahli Security Assessment, pemantauan CCTV, hingga sweep ruangan berbasis deteksi elektronik (anti-penyadapan).",
     image: bgSlide3,

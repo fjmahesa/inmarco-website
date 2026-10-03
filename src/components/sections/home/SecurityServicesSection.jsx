@@ -225,7 +225,7 @@ export default function SecurityServicesSection() {
         </div>
 
         {/* ==================== PART 3: KEAMANAN BERBASIS TEKNOLOGI & DETEKSI (GAMBAR 3) ==================== */}
-        <div className="space-y-8">
+        {/* <div className="space-y-8">
           <FadeInSection>
             <div className="text-center max-w-3xl mx-auto space-y-2">
               <span className="text-xs font-extrabold uppercase tracking-widest text-sky-600 bg-sky-50 px-4 py-1.5 rounded-full border border-sky-200">
@@ -271,7 +271,7 @@ export default function SecurityServicesSection() {
               </FadeInSection>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

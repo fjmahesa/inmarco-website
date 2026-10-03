@@ -229,8 +229,8 @@ export default function Footer() {
                       Address
                     </h4>
                     <p className="text-sm font-medium text-slate-200 leading-relaxed">
-                      Menara Bidakara 1 Lt 1 Jl. Jend. Gatot Subroto Kav. 71-73,
-                      Jakarta Selatan
+                      Kantor Operasional: Menara MTH Lantai 15 Suite 1508 -
+                      Jalan MT Haryono Tebet Jakarta Selatan
                     </p>
                   </div>
                 </div>
@@ -305,6 +305,9 @@ export default function Footer() {
                     </option>
                     <option value="Research & Consulting">
                       Research & Consulting
+                    </option>
+                    <option value="Jasa Pengamanan Swasta">
+                      Jasa Pengamanan Swasta
                     </option>
                     <option value="Lainnya">Lainnya</option>
                   </select>
