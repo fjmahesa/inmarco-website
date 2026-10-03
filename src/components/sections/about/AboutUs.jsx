@@ -1,7 +1,4 @@
-import FadeInSection from "../components/common/FadeInSection";
-
-// Import aset gambar
-import aboutImg from "../assets/business-coach-005.webp";
+import FadeInSection from "../../common/FadeInSection";
 
 const coreValues = [
   {
@@ -94,117 +91,15 @@ const coreValues = [
 
 export default function AboutUs() {
   return (
-    <main className="pt-24 pb-20 sm:pb-28 bg-slate-50 text-slate-800 min-h-screen relative overflow-hidden">
+    <main className="pt-6 sm:pt-10 pb-16 sm:pb-24 bg-slate-50 text-slate-800 relative overflow-hidden">
       {/* Background Ambient Glow */}
       <div className="absolute top-1/4 -left-20 w-80 h-80 bg-blue-100/60 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute bottom-10 right-0 w-96 h-96 bg-sky-100/50 rounded-full blur-[140px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 relative z-10">
-        {/* BAGIAN 1: PROFIL & GAMBAR VISUAL */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center mb-16">
-          <FadeInSection className="lg:col-span-5">
-            <div className="relative mx-auto max-w-md lg:max-w-none">
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white">
-                <img
-                  src={aboutImg}
-                  alt="PT Global Inmarco Sejahtera"
-                  className="w-full h-[360px] sm:h-[420px] object-cover object-center transform hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-navy-950/70 via-transparent to-transparent" />
-
-                <div className="absolute bottom-5 left-5 right-5 text-white">
-                  <p className="text-xs font-semibold text-sky-300 uppercase tracking-widest">
-                    Integrated Agency
-                  </p>
-                  <h4 className="text-lg font-black mt-0.5">
-                    PT. Global Inmarco Sejahtera
-                  </h4>
-                </div>
-              </div>
-
-              {/* Floating Badge Transformasi */}
-              <div className="absolute -bottom-6 -right-2 sm:-right-6 bg-white border border-slate-200/80 p-4 rounded-2xl shadow-xl max-w-[220px] space-y-1 backdrop-blur-md">
-                <div className="flex items-center gap-2">
-                  <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse" />
-                  <span className="text-[10px] font-extrabold uppercase tracking-wider text-slate-500">
-                    Transformasi Badan Hukum
-                  </span>
-                </div>
-                <p className="text-xs font-black text-navy-950">
-                  CV (2011) → PT (2024)
-                </p>
-                <p className="text-[10px] text-slate-600 font-medium leading-tight">
-                  Tata kelola adaptif & terintegrasi.
-                </p>
-              </div>
-            </div>
-          </FadeInSection>
-
-          <FadeInSection className="lg:col-span-7">
-            <div className="space-y-6">
-              <span className="text-xs font-extrabold uppercase tracking-widest text-blue-600 bg-blue-50 px-4 py-1.5 rounded-full border border-blue-200">
-                Tentang Kami
-              </span>
-
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-navy-900 tracking-tight leading-tight">
-                Transformasi Menuju <br className="hidden sm:inline" />
-                <span className="text-blue-600">
-                  Solusi Terintegrasi & Adaptif
-                </span>
-              </h1>
-
-              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
-                Dimulai dari badan usaha berbentuk CV pada tahun 2011,
-                perusahaan kami berkembang pesat hingga resmi bertransformasi
-                menjadi{" "}
-                <strong className="text-navy-900 font-semibold">
-                  PT. Global Inmarco Sejahtera
-                </strong>{" "}
-                pada 28 Mei 2024 guna menghadirkan ekosistem layanan
-                terintegrasi skala besar bagi pemerintah dan swasta.
-              </p>
-
-              <div className="p-6 rounded-2xl bg-white border border-slate-200/80 shadow-sm space-y-3">
-                <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center shrink-0">
-                    <svg
-                      className="w-4 h-4"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                      />
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
-                      />
-                    </svg>
-                  </div>
-                  <span className="text-xs font-bold uppercase tracking-wider text-blue-600">
-                    Visi Perusahaan
-                  </span>
-                </div>
-
-                <p className="text-sm font-bold text-navy-900 italic leading-relaxed">
-                  "Menjadi perusahaan penyedia jasa dan solusi terintegrasi yang
-                  profesional, terpercaya, inovatif, dan berorientasi pada
-                  kualitas pelayanan serta kebutuhan klien."
-                </p>
-              </div>
-            </div>
-          </FadeInSection>
-        </div>
-
-        {/* BAGIAN 2: DATA LEGALITAS RESMI PT */}
+        {/* BAGIAN 1: DATA LEGALITAS RESMI PT */}
         <FadeInSection>
-          <div className="bg-white border border-slate-200/80 rounded-3xl p-6 sm:p-8 shadow-sm mb-16">
+          <div className="bg-white border border-slate-200/80 rounded-3xl p-6 sm:p-8 shadow-sm mb-12 sm:mb-16">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 border-b border-slate-100 pb-4">
               <div>
                 <span className="text-[10px] font-extrabold uppercase tracking-widest text-blue-600 bg-blue-50 px-3 py-1 rounded-full border border-blue-100">
@@ -259,7 +154,7 @@ export default function AboutUs() {
           </div>
         </FadeInSection>
 
-        {/* BAGIAN 3: PILAR NILAI UTAMA (CORE VALUES) */}
+        {/* BAGIAN 2: PILAR NILAI UTAMA (CORE VALUES) */}
         <div>
           <FadeInSection>
             <h3 className="text-xs font-extrabold uppercase tracking-widest text-slate-400 mb-6 text-center sm:text-left">

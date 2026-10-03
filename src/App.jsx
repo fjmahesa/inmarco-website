@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
 import HomePage from "./pages/HomePage";
-import AboutUs from "./pages/AboutUs";
+import AboutPage from "./pages/AboutPage";
 import Footer from "./components/layout/Footer";
 
 export default function App() {
@@ -15,7 +15,7 @@ export default function App() {
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/about" element={<AboutUs />} />
+            <Route path="/about" element={<AboutPage />} />
           </Routes>
         </main>
 
