@@ -1,6 +1,8 @@
 import FadeInSection from "../../common/FadeInSection";
 
 const governmentLogos = [
+  { name: "DPRD DKI Jakarta", src: "/dprd_dki_jakarta.webp" },
+  { name: "DPPBJ DKI Jakarta", src: "/bppbj_dki_jakarta.webp" },
   { name: "Kemkominfo / Komdigi", src: "/komdigi.webp" },
   { name: "Bank Indonesia", src: "/BI.webp" },
   { name: "Kemenko Perekonomian", src: "/menkoperekonomian.webp" },
