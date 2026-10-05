@@ -15,36 +15,24 @@ const slides = [
     description:
       "Mitra strategis terpercaya dengan tata kelola profesional, menghadirkan layanan terintegrasi skala besar untuk instansi pemerintah dan korporasi.",
     image: bgSlide1,
-    stats: [
-      { label: "Pengalaman", value: "13+ Tahun" },
-      { label: "Transformasi", value: "CV ke PT (2024)" },
-    ],
   },
   {
     id: 2,
-    badge: "Event & Digital Communication",
-    title: "#TemukanMarket & #TetapTerhubung",
+    badge: "Integrated Solutions • Est. 2011",
+    title: "Digital Communication",
     subtitle: "Kuasai Pasar & Bangun Engagement Berkelanjutan",
     description:
       "Solusi MICE profesional, manajemen event hybrid, kampanye komunikasi digital terukur, dan personal branding untuk memperkuat citra lembaga Anda.",
     image: bgSlide2,
-    stats: [
-      { label: "Cakupan MICE", value: "End-to-End" },
-      { label: "Layanan Media", value: "360° Digital" },
-    ],
   },
   {
     id: 3,
-    badge: "Jasa Pengamanan Swasta",
-    subtitle: "Proteksi Aset, SDM Disiplin & Teknologi Deteksi",
+    badge: "Integrated Solutions • Est. 2011",
     title: "Jasa Pengamanan Swasta",
+    subtitle: "Proteksi Aset, SDM Disiplin & Teknologi Deteksi",
     description:
       "Penyediaan Satpam profesional, Tenaga Ahli Security Assessment, pemantauan CCTV, hingga sweep ruangan berbasis deteksi elektronik (anti-penyadapan).",
     image: bgSlide3,
-    stats: [
-      { label: "Personel & Ahli", value: "Sertifikasi" },
-      { label: "Fitur Khusus", value: "Electronic Sweep" },
-    ],
   },
 ];
 
@@ -88,10 +76,9 @@ export default function HeroSection() {
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
-        /* Responsif Mobile: Menggunakan padding fleksibel alih-alih min-h-screen kaku */
         className="relative w-full pt-28 pb-16 sm:py-32 lg:py-0 lg:h-screen lg:min-h-[660px] flex items-center justify-center overflow-hidden bg-navy-950"
       >
-        {/* Visual Background Slides dengan Transition Smooth */}
+        {/* Visual Background Slides */}
         {slides.map((slide, index) => (
           <div
             key={slide.id}
@@ -104,14 +91,13 @@ export default function HeroSection() {
               alt={slide.title}
               className="w-full h-full object-cover object-center filter brightness-[0.85]"
             />
-            {/* Gradient Overlay untuk keterbacaan teks yang optimal */}
             <div className="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-r from-navy-950/95 via-navy-950/80 to-navy-950/40" />
           </div>
         ))}
 
         {/* Konten Hero Container */}
         <div className="relative z-20 max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 w-full">
-          <div className="max-w-2xl min-h-[300px] sm:min-h-[340px] flex items-center">
+          <div className="max-w-2xl min-h-[260px] sm:min-h-[280px] flex items-center">
             {slides.map((slide, index) => {
               const isActive = index === currentSlide;
 
@@ -144,36 +130,6 @@ export default function HeroSection() {
                   <p className="text-xs sm:text-base text-slate-300 leading-relaxed font-normal max-w-xl">
                     {slide.description}
                   </p>
-
-                  {/* Stats Visual Quick Info (Fresh Style) */}
-                  <div className="flex items-center gap-6 pt-1 border-t border-slate-800/80 max-w-md">
-                    {slide.stats.map((st, i) => (
-                      <div key={i} className="space-y-0.5">
-                        <p className="text-[10px] uppercase tracking-wider text-slate-400 font-bold">
-                          {st.label}
-                        </p>
-                        <p className="text-xs sm:text-sm font-extrabold text-white">
-                          {st.value}
-                        </p>
-                      </div>
-                    ))}
-                  </div>
-
-                  {/* Tombol Aksi (CTA) */}
-                  <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
-                    <a
-                      href="#contact"
-                      className="w-full sm:w-auto text-center px-8 py-3.5 text-xs font-extrabold text-navy-950 bg-sky-400 hover:bg-sky-300 rounded-xl shadow-lg shadow-sky-400/20 transition-all transform hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
-                    >
-                      Konsultasi Layanan
-                    </a>
-                    <a
-                      href="#service"
-                      className="w-full sm:w-auto text-center px-8 py-3.5 text-xs font-bold text-white hover:text-sky-400 bg-navy-900/80 hover:bg-navy-900 border border-slate-700/80 rounded-xl shadow-sm transition-all"
-                    >
-                      Jelajahi Layanan
-                    </a>
-                  </div>
                 </div>
               );
             })}
