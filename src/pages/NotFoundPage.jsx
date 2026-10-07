@@ -3,7 +3,7 @@ import FadeInSection from "../components/common/FadeInSection";
 
 export default function NotFoundPage() {
   return (
-    <main className="min-h-screen bg-navy-950 text-slate-100 flex items-center justify-center relative overflow-hidden px-5 sm:px-6 lg:px-8 py-20">
+    <main className="min-h-screen bg-navy-950 mt-5 sm:mt-10 text-slate-100 flex items-center justify-center relative overflow-hidden px-5 sm:px-6 lg:px-8 py-20">
       {/* Background Ambient Glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-sky-500/10 rounded-full blur-[140px] pointer-events-none" />
       <div className="absolute -top-10 -left-10 w-72 h-72 bg-blue-600/10 rounded-full blur-[100px] pointer-events-none" />
