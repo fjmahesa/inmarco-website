@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
+import NotFoundPage from "./pages/NotFoundPage";
 import Footer from "./components/layout/Footer";
 
 export default function App() {
@@ -16,6 +17,9 @@ export default function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
+
+            {/* Catch-all Route untuk Halaman 404 */}
+            <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </main>
 
