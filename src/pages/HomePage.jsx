@@ -18,6 +18,7 @@ import ProcessWorkflow from "../components/sections/home/ProcessWorkflow";
 import ClientLogos from "../components/sections/home/ClientLogos";
 import EducationLogos from "../components/sections/home/EducationLogos";
 import CorporateLogos from "../components/sections/home/CorporateLogos";
+import InstagramFeed from "../components/sections/home/InstagramFeed";
 
 export default function HomePage() {
   return (
@@ -38,6 +39,7 @@ export default function HomePage() {
         {/* <Services /> */}
         {/* <Projects /> */}
         {/* <ProcessWorkflow /> */}
+        <InstagramFeed />
         <ClientLogos />
         <PemdaBumdLogos />
         <EducationLogos />

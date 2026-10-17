@@ -55,7 +55,7 @@ export default function AboutHeroSection() {
               {/* Bingkai Foto Utama */}
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white">
                 <img
-                  src={aboutHeroImg}
+                  src="/og-image.jpg"
                   alt="Tentang PT Global Inmarco Sejahtera"
                   className="w-full h-[340px] sm:h-[420px] object-cover object-center transform hover:scale-105 transition-transform duration-700"
                 />
