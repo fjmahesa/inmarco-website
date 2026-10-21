@@ -1,5 +1,6 @@
 import AboutUs from "../components/sections/about/AboutUs";
 import AboutHeroSection from "../components/sections/about/AboutHeroSection";
+import SioPdfSection from "../components/sections/about/SioPdfSection";
 
 export default function AboutPage() {
   return (
@@ -8,6 +9,7 @@ export default function AboutPage() {
         <AboutHeroSection />
 
         <AboutUs />
+        <SioPdfSection />
       </main>
     </div>
   );

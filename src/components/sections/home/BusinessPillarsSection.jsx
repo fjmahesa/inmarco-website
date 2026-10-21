@@ -97,11 +97,11 @@ export default function BusinessPillarsSection() {
 
                   {/* KONTEN KARTU */}
                   <div className="p-6 space-y-3">
-                    <span
+                    {/* <span
                       className={`inline-block text-[10px] font-extrabold uppercase tracking-widest px-3 py-1 rounded-full border ${item.badgeColor}`}
                     >
                       Pilar 0{index + 1}
-                    </span>
+                    </span> */}
 
                     <h3 className="text-lg font-black text-navy-900 tracking-tight leading-snug">
                       {item.title}
@@ -118,7 +118,7 @@ export default function BusinessPillarsSection() {
                 </div>
 
                 {/* FOOTER KARTU */}
-                <div className="px-6 pb-6 pt-2 border-t border-slate-200/60 flex items-center justify-between text-xs font-bold text-sky-600">
+                {/* <div className="px-6 pb-6 pt-2 border-t border-slate-200/60 flex items-center justify-between text-xs font-bold text-sky-600">
                   <span>Lihat Detail</span>
                   <svg
                     className="w-4 h-4 transform group-hover:translate-x-1 transition-transform"
@@ -133,7 +133,7 @@ export default function BusinessPillarsSection() {
                       d="M14 5l7 7m0 0l-7 7m7-7H3"
                     />
                   </svg>
-                </div>
+                </div> */}
               </div>
             </FadeInSection>
           ))}

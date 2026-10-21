@@ -134,13 +134,13 @@ export default function Footer() {
               </span>
 
               <h2 className="text-3xl mt-2 sm:text-4xl font-black text-white tracking-tight">
-                Mari Berdiskusi &{" "}
-                <span className="text-sky-400">#TemukanMarket</span> Anda
+                Hubungi <span className="text-sky-400">Kami</span>
               </h2>
 
               <p className="text-sm text-slate-300 leading-relaxed font-normal">
-                Hubungi kami untuk konsultasi strategi pemasaran terpadu,
-                komunikasi digital, hingga penyelenggaraan event profesional.
+                Hubungi kami untuk informasi detail mengenai jasa pengamanan
+                swasta, komunikasi digital, Konsultan strategis, MICE & event
+                organizer.
               </p>
 
               <div className="space-y-4 pt-2">
