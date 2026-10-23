@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import FadeInSection from "../common/FadeInSection";
+import { HashLink } from "react-router-hash-link";
 
 export default function Footer() {
   const [formData, setFormData] = useState({
@@ -352,24 +353,25 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-wrap items-center justify-center gap-6 font-semibold">
-            <a href="#" className="hover:text-sky-400 transition-colors">
+            <a href="/" className="hover:text-sky-400 transition-colors">
               Home
             </a>
-            <a href="#about" className="hover:text-sky-400 transition-colors">
+            <a href="/about" className="hover:text-sky-400 transition-colors">
               About Us
             </a>
-            <a href="#service" className="hover:text-sky-400 transition-colors">
-              Service
-            </a>
             <a
-              href="#projects"
+              href="/services"
               className="hover:text-sky-400 transition-colors"
             >
-              Project
+              Service
             </a>
-            <a href="#client" className="hover:text-sky-400 transition-colors">
+
+            <HashLink
+              to="/#client"
+              className="hover:text-sky-400 transition-colors"
+            >
               Our Client
-            </a>
+            </HashLink>
           </div>
 
           <p className="text-center md:text-right">

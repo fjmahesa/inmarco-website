@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate, useLocation } from "react-router-dom";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -7,24 +7,22 @@ export default function Navbar() {
   const [lastScrollY, setLastScrollY] = useState(0);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+  const navigate = useNavigate();
+  const location = useLocation();
+
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
 
-      // Cek apakah halaman di-scroll melewati batas atas (20px)
       setIsScrolled(currentScrollY > 20);
 
-      // Logika Sembunyi/Muncul Navbar:
-      // Jika di paling atas -> selalu muncul
-      // Jika scroll ke bawah -> sembunyikan
-      // Jika scroll ke atas -> tampilkan
       if (currentScrollY <= 0) {
         setIsVisible(true);
       } else if (currentScrollY > lastScrollY && currentScrollY > 80) {
-        setIsVisible(false); // Sembunyikan saat scroll ke bawah
-        setIsMobileMenuOpen(false); // Tutup drawer mobile saat di-scroll
+        setIsVisible(false);
+        setIsMobileMenuOpen(false);
       } else if (currentScrollY < lastScrollY) {
-        setIsVisible(true); // Munculkan saat scroll ke atas
+        setIsVisible(true);
       }
 
       setLastScrollY(currentScrollY);
@@ -34,7 +32,25 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
 
-  // Helper style untuk menandai menu yang sedang aktif
+  // Handler khusus untuk Anchor Link (Our Client & Contact Us) agar dapat diakses dari halaman mana pun
+  const handleAnchorNav = (e, targetId) => {
+    e.preventDefault();
+    setIsMobileMenuOpen(false);
+
+    if (location.pathname !== "/") {
+      // Pindah ke Beranda terlebih dahulu
+      navigate("/");
+      setTimeout(() => {
+        const el = document.getElementById(targetId);
+        if (el) el.scrollIntoView({ behavior: "smooth" });
+      }, 150);
+    } else {
+      // Jika sudah berada di Beranda, langsung scroll
+      const el = document.getElementById(targetId);
+      if (el) el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   const navLinkStyle = ({ isActive }) =>
     `text-sm font-semibold transition-colors ${
       isActive
@@ -78,15 +94,13 @@ export default function Navbar() {
             <NavLink to="/about" className={navLinkStyle}>
               About Us
             </NavLink>
-            <a
-              href="#service"
-              className="text-sm font-semibold text-slate-700 hover:text-blue-600 transition-colors"
-            >
-              Service
-            </a>
+            <NavLink to="/services" className={navLinkStyle}>
+              Services
+            </NavLink>
             <a
               href="#client"
-              className="text-sm font-semibold text-slate-700 hover:text-blue-600 transition-colors"
+              onClick={(e) => handleAnchorNav(e, "client")}
+              className="text-sm font-semibold text-slate-700 hover:text-blue-600 transition-colors cursor-pointer"
             >
               Our Client
             </a>
@@ -96,7 +110,8 @@ export default function Navbar() {
           <div className="hidden md:flex items-center">
             <a
               href="#contact"
-              className="px-6 py-2.5 text-xs font-bold text-white bg-navy-900 hover:bg-blue-600 rounded-full shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5 active:translate-y-0"
+              onClick={(e) => handleAnchorNav(e, "contact")}
+              className="px-6 py-2.5 text-xs font-bold text-white bg-navy-900 hover:bg-blue-600 rounded-full shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
             >
               Contact Us
             </a>
@@ -150,24 +165,24 @@ export default function Navbar() {
             >
               About Us
             </NavLink>
-            <a
-              href="#service"
+            <NavLink
+              to="/services"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="block py-2 text-sm font-semibold text-slate-700 hover:text-blue-600"
+              className={mobileNavLinkStyle}
             >
-              Service
-            </a>
+              Services
+            </NavLink>
             <a
               href="#client"
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="block py-2 text-sm font-semibold text-slate-700 hover:text-blue-600"
+              onClick={(e) => handleAnchorNav(e, "client")}
+              className="block py-2 text-sm font-semibold text-slate-700 hover:text-blue-600 cursor-pointer"
             >
               Our Client
             </a>
             <a
               href="#contact"
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="block text-center py-2.5 mt-3 text-xs font-bold text-white bg-navy-900 rounded-xl shadow-md"
+              onClick={(e) => handleAnchorNav(e, "contact")}
+              className="block text-center py-2.5 mt-3 text-xs font-bold text-white bg-navy-900 rounded-xl shadow-md cursor-pointer"
             >
               Contact Us
             </a>
