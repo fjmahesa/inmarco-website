@@ -32,20 +32,29 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
 
-  // Handler khusus untuk Anchor Link (Our Client & Contact Us) agar dapat diakses dari halaman mana pun
+  // Handler khusus untuk Home & Logo
+  const handleHomeClick = (e) => {
+    setIsMobileMenuOpen(false);
+
+    if (location.pathname === "/") {
+      // Jika sudah di Beranda, cegah reload & scroll mulus ke paling atas
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
+  // Handler khusus untuk Anchor Link (Our Client & Contact Us)
   const handleAnchorNav = (e, targetId) => {
     e.preventDefault();
     setIsMobileMenuOpen(false);
 
     if (location.pathname !== "/") {
-      // Pindah ke Beranda terlebih dahulu
       navigate("/");
       setTimeout(() => {
         const el = document.getElementById(targetId);
         if (el) el.scrollIntoView({ behavior: "smooth" });
       }, 150);
     } else {
-      // Jika sudah berada di Beranda, langsung scroll
       const el = document.getElementById(targetId);
       if (el) el.scrollIntoView({ behavior: "smooth" });
     }
@@ -78,7 +87,11 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo Gambar Website */}
-          <Link to="/" className="flex items-center gap-2 group">
+          <Link
+            to="/"
+            onClick={handleHomeClick}
+            className="flex items-center gap-2 group"
+          >
             <img
               src="/inmarco_logo.png"
               alt="INMARCO.ID"
@@ -88,7 +101,7 @@ export default function Navbar() {
 
           {/* Desktop Navigation Menu */}
           <nav className="hidden md:flex items-center gap-8">
-            <NavLink to="/" className={navLinkStyle}>
+            <NavLink to="/" onClick={handleHomeClick} className={navLinkStyle}>
               Home
             </NavLink>
             <NavLink to="/about" className={navLinkStyle}>
@@ -104,9 +117,6 @@ export default function Navbar() {
             >
               Our Client
             </a>
-            <NavLink to="/gallery" className={navLinkStyle}>
-              Gallery
-            </NavLink>
           </nav>
 
           {/* CTA Button (Contact Us) */}
@@ -156,7 +166,7 @@ export default function Navbar() {
           <div className="md:hidden mt-4 pt-4 pb-6 px-4 bg-white border border-slate-100 rounded-2xl shadow-xl space-y-2 animate-fade-in">
             <NavLink
               to="/"
-              onClick={() => setIsMobileMenuOpen(false)}
+              onClick={handleHomeClick}
               className={mobileNavLinkStyle}
             >
               Home
@@ -182,13 +192,6 @@ export default function Navbar() {
             >
               Our Client
             </a>
-            <NavLink
-              to="/gallery"
-              onClick={() => setIsMobileMenuOpen(false)}
-              className={mobileNavLinkStyle}
-            >
-              Gallery
-            </NavLink>
             <a
               href="#contact"
               onClick={(e) => handleAnchorNav(e, "contact")}
