@@ -372,6 +372,10 @@ export default function Footer() {
             >
               Our Client
             </HashLink>
+
+            <a href="/gallery" className="hover:text-sky-400 transition-colors">
+              Gallery
+            </a>
           </div>
 
           <p className="text-center md:text-right">

@@ -6,6 +6,7 @@ import AboutPage from "./pages/AboutPage";
 import ServicesPage from "./pages/ServicesPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import Footer from "./components/layout/Footer";
+import GallerySection from "./pages/GallerySection";
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/services" element={<ServicesPage />} />
+            <Route path="/gallery" element={<GallerySection />} />
 
             {/* Catch-all Route untuk Halaman 404 */}
             <Route path="*" element={<NotFoundPage />} />

@@ -104,6 +104,9 @@ export default function Navbar() {
             >
               Our Client
             </a>
+            <NavLink to="/gallery" className={navLinkStyle}>
+              Gallery
+            </NavLink>
           </nav>
 
           {/* CTA Button (Contact Us) */}
@@ -179,6 +182,13 @@ export default function Navbar() {
             >
               Our Client
             </a>
+            <NavLink
+              to="/gallery"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className={mobileNavLinkStyle}
+            >
+              Gallery
+            </NavLink>
             <a
               href="#contact"
               onClick={(e) => handleAnchorNav(e, "contact")}
