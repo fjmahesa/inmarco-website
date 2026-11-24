@@ -209,7 +209,7 @@ export default function ServicesPage() {
                 {/* Footer Action */}
                 <div className="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between">
                   <a
-                    href="https://wa.me/6281323459296"
+                    href="https://wa.me/6281113803856"
                     target="_blank"
                     rel="noreferrer"
                     className="text-xs font-bold text-navy-950 group-hover:text-sky-600 flex items-center gap-1.5 transition-colors"
