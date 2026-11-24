@@ -166,10 +166,10 @@ export default function Footer() {
                       Phone
                     </h4>
                     <a
-                      href="tel:081113803856"
+                      href="tel:081180001091"
                       className="text-sm font-semibold text-white hover:text-sky-400 transition-colors"
                     >
-                      081113803856
+                      081180001091
                     </a>
                   </div>
                 </div>
