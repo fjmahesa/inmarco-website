@@ -1,0 +1,66 @@
+{
+  "hero": {
+    "badge": "Our Capabilities",
+    "title": "Integrated Services",
+    "description": "A trusted strategic partner with professional governance, delivering integrated solutions for the needs of government agencies and corporations."
+  },
+  "services": {
+    "scopeTitle": "Service Scope:",
+    "mice": {
+      "badge": "Event & MICE",
+      "title": "MICE & Event Management",
+      "subtitle": "Hybrid Events, Conferences, & Professional Exhibitions",
+      "description": "Comprehensive planning and execution of large-scale events, from national exhibitions and product launches to government working meetings and connected hybrid event management.",
+      "features": [
+        "Hybrid & Virtual Event Management",
+        "Industrial Exhibitions & Expos",
+        "National & International Conferences and Seminars",
+        "Stage Production, Lighting, & Sound Systems"
+      ]
+    },
+    "digitalComm": {
+      "badge": "Media & Digital",
+      "title": "Digital Communication & Branding",
+      "subtitle": "Measurable Media Strategy, Personal Branding, & Engagement",
+      "description": "Building and strengthening public perception of institutions and corporations through digital media campaigns, crisis communication strategies, social media management, and public relations.",
+      "features": [
+        "Digital Campaign & Social Media Management",
+        "Personal Branding & Executive Public Relations",
+        "Media Monitoring & Crisis Communication",
+        "Creative Content & Corporate Video Production"
+      ]
+    },
+    "security": {
+      "badge": "Private Security",
+      "title": "Private Security Services",
+      "subtitle": "Asset Protection, Disciplined Personnel, & Modern Detection Technology",
+      "description": "Providing officially certified security guards, security risk assessment experts, integrated monitoring systems, and electronic room sweeping (anti-bugging).",
+      "features": [
+        "Provision & Management of Licensed Security Personnel",
+        "Security Risk Assessment & Feasibility Audit",
+        "Electronic Countermeasures (Anti-Bugging Sweeps)",
+        "CCTV Monitoring & Digital Access Control Systems"
+      ]
+    },
+    "consulting": {
+      "badge": "Business Consulting",
+      "title": "Corporate & Management Consulting",
+      "subtitle": "Integrated Service Governance Solutions & Operational Efficiency",
+      "description": "Strategic consulting support for government and private institutions to improve operational governance efficiency, compliance analysis, and resource optimization.",
+      "features": [
+        "Operational Governance & Standard Operating Procedures (SOPs)",
+        "Risk Management & Compliance Consulting",
+        "Human Resource Allocation Optimization",
+        "Integrated Work Program Planning"
+      ]
+    }
+  },
+  "card": {
+    "consultation": "Consult a Service"
+  },
+  "cta": {
+    "title": "Need a Custom Solution for Your Institution?",
+    "description": "Our professional team is ready to help design and execute integrated work programs tailored to your specific needs.",
+    "button": "Learn More About Us"
+  }
+}

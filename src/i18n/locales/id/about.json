@@ -1,0 +1,51 @@
+{
+  "hero": {
+    "badge": "About PT. Global Inmarco Sejahtera",
+    "titleLead": "Membangun Masa Depan Melalui",
+    "titleAccent": "Solusi Terintegrasi",
+    "description": "Transformasi berkelanjutan dari badan usaha CV pada tahun 2011 hingga resmi menjadi Perseroan Terbatas (PT) pada Mei 2024. Kami hadir memperkuat sinergi di bidang MICE, Konsultan Strategis, Media Digital, dan Jasa Pengamanan.",
+    "highlightExperience": "Tahun Pengalaman",
+    "highlightPillars": "Pilar Utama Jasa",
+    "highlightLegal": "Resmi Kemenkumham",
+    "imageAlt": "Tentang PT Global Inmarco Sejahtera",
+    "agencyLabel": "Integrated Agency",
+    "milestoneLabel": "Milestone Legalitas"
+  },
+  "credentials": {
+    "badge": "Official Credentials",
+    "title": "Legalitas & Data Perusahaan",
+    "registered": "Resmi Terdaftar di Kemenkumham RI",
+    "entityNameLabel": "Nama Badan Usaha",
+    "deedNumberLabel": "No. Akta Pendirian",
+    "deedNumberValue": "No. 06 Tanggal 28 Mei 2024",
+    "decreeLabel": "SK Kemenkumham",
+    "taxLabel": "NPWP Perusahaan"
+  },
+  "values": {
+    "heading": "• Pilar Nilai Utama Perusahaan",
+    "quality": {
+      "title": "Kualitas & Integritas",
+      "description": "Memberikan layanan profesional dengan mengutamakan mutu dan kepuasan klien."
+    },
+    "creative": {
+      "title": "Solusi Kreatif & Inovatif",
+      "description": "Mengembangkan gagasan segar sesuai kebutuhan instansi pemerintah dan perusahaan."
+    },
+    "integration": {
+      "title": "Integrasi Sistem & SDM",
+      "description": "Memadukan sumber daya manusia, teknologi, komunikasi, dan manajemen terpadu."
+    },
+    "partnership": {
+      "title": "Kemitraan Berkelanjutan",
+      "description": "Membangun hubungan jangka panjang yang didasari pada rasa saling percaya."
+    }
+  },
+  "sio": {
+    "badge": "Leglegalitas & Perizinan",
+    "title": "Surat Izin Operasional Bidang Usaha Jasa Pengamanan",
+    "description": "Dokumen resmi perizinan operasional jasa pengamanan PT Global Inmarco Sejahtera yang telah terverifikasi.",
+    "downloadButton": "Unduh / Buka Dokumen",
+    "previewUnsupported": "Pratinjau langsung dokumen PDF tidak didukung oleh browser Anda.",
+    "openButton": "Klik untuk Membuka Dokumen SIO"
+  }
+}

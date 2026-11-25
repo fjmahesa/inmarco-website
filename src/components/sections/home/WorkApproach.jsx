@@ -1,147 +1,144 @@
+import { useTranslation } from "react-i18next";
 import FadeInSection from "../../common/FadeInSection";
 
-const steps = [
-  {
-    number: "01",
-    title: "UNDERSTAND",
-    subtitle: "Memahami Kebutuhan",
-    description:
-      "Mendalami kebutuhan, tujuan, tantangan, serta karakteristik unik organisasi atau perusahaan Anda.",
-    icon: (
-      <svg
-        className="w-6 h-6"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-        />
-      </svg>
-    ),
-  },
-  {
-    number: "02",
-    title: "ANALYZE",
-    subtitle: "Analisis Data",
-    description:
-      "Mengumpulkan informasi dan menganalisis data relevan secara mendalam untuk merumuskan landasan strategi.",
-    icon: (
-      <svg
-        className="w-6 h-6"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-        />
-      </svg>
-    ),
-  },
-  {
-    number: "03",
-    title: "STRATEGIZE",
-    subtitle: "Perancangan Konsep",
-    description:
-      "Menyusun strategi terukur, arsitektur komunikasi, serta ide kampanye/eksekusi yang inovatif.",
-    icon: (
-      <svg
-        className="w-6 h-6"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-        />
-      </svg>
-    ),
-  },
-  {
-    number: "04",
-    title: "EXECUTE",
-    subtitle: "Eksekusi Program",
-    description:
-      "Melaksanakan program secara presisi dengan dukungan penuh SDM berpengalaman dan teknologi terintegrasi.",
-    icon: (
-      <svg
-        className="w-6 h-6"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          d="M13 10V3L4 14h7v7l9-11h-7z"
-        />
-      </svg>
-    ),
-  },
-  {
-    number: "05",
-    title: "MONITOR",
-    subtitle: "Pengawasan Kualitas",
-    description:
-      "Melakukan pengawasan berkala selama pelaksanaan untuk menjamin kualitas layanan tetap terjaga optimal.",
-    icon: (
-      <svg
-        className="w-6 h-6"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-        />
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
-        />
-      </svg>
-    ),
-  },
-  {
-    number: "06",
-    title: "EVALUATE",
-    subtitle: "Evaluasi & Rekomendasi",
-    description:
-      "Evaluasi menyeluruh serta pemberian rekomendasi strategis untuk pengembangan bisnis berkelanjutan.",
-    icon: (
-      <svg
-        className="w-6 h-6"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-        />
-      </svg>
-    ),
-  },
-];
-
 export default function WorkApproach() {
+  const { t } = useTranslation("homeMisc");
+
+  const steps = [
+    {
+      number: t("work.steps.0.number"),
+      title: t("work.steps.0.title"),
+      subtitle: t("work.steps.0.subtitle"),
+      description: t("work.steps.0.description"),
+      icon: (
+        <svg
+          className="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+          />
+        </svg>
+      ),
+    },
+    {
+      number: t("work.steps.1.number"),
+      title: t("work.steps.1.title"),
+      subtitle: t("work.steps.1.subtitle"),
+      description: t("work.steps.1.description"),
+      icon: (
+        <svg
+          className="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+          />
+        </svg>
+      ),
+    },
+    {
+      number: t("work.steps.2.number"),
+      title: t("work.steps.2.title"),
+      subtitle: t("work.steps.2.subtitle"),
+      description: t("work.steps.2.description"),
+      icon: (
+        <svg
+          className="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+          />
+        </svg>
+      ),
+    },
+    {
+      number: t("work.steps.3.number"),
+      title: t("work.steps.3.title"),
+      subtitle: t("work.steps.3.subtitle"),
+      description: t("work.steps.3.description"),
+      icon: (
+        <svg
+          className="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M13 10V3L4 14h7v7l9-11h-7z"
+          />
+        </svg>
+      ),
+    },
+    {
+      number: t("work.steps.4.number"),
+      title: t("work.steps.4.title"),
+      subtitle: t("work.steps.4.subtitle"),
+      description: t("work.steps.4.description"),
+      icon: (
+        <svg
+          className="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+          />
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+          />
+        </svg>
+      ),
+    },
+    {
+      number: t("work.steps.5.number"),
+      title: t("work.steps.5.title"),
+      subtitle: t("work.steps.5.subtitle"),
+      description: t("work.steps.5.description"),
+      icon: (
+        <svg
+          className="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+          />
+        </svg>
+      ),
+    },
+  ];
+
   return (
     <section className="py-20 sm:py-28 bg-white text-slate-800 relative overflow-hidden">
       {/* Background Soft Glow & Grid Accent */}
@@ -153,16 +150,14 @@ export default function WorkApproach() {
         <FadeInSection>
           <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
             <span className="text-xs font-extrabold uppercase tracking-widest text-blue-600 bg-blue-50 px-4 py-1.5 rounded-full border border-blue-200">
-              Work Methodology
+              {t("work.badge")}
             </span>
             <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-navy-900 leading-tight">
-              Pendekatan Kerja{" "}
-              <span className="text-blue-600">Terintegrasi</span>
+              {t("work.titleLead")}{" "}
+              <span className="text-blue-600">{t("work.titleAccent")}</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
-              Metodologi 6 langkah terstruktur PT. Global Inmarco Sejahtera
-              untuk memastikan setiap proyek berjalan terukur, profesional, dan
-              memberikan dampak nyata.
+              {t("work.description")}
             </p>
           </div>
         </FadeInSection>
@@ -204,7 +199,7 @@ export default function WorkApproach() {
 
                 {/* Bottom Step Indicator */}
                 <div className="pt-4 mt-6 border-t border-slate-200/60 flex items-center justify-between text-[11px] font-semibold text-slate-400">
-                  <span>Tahap {index + 1} dari 6</span>
+                  <span>{t("work.stepProgress", { step: index + 1 })}</span>
                   <svg
                     className="w-4 h-4 text-blue-600 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all"
                     fill="none"

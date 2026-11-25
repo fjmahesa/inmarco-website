@@ -1,9 +1,13 @@
+import { useTranslation } from "react-i18next";
+
 import FadeInSection from "../../common/FadeInSection";
 
 // Impor aset gambar visual hero (sesuaikan path gambar jika ada di src/assets)
 import aboutHeroImg from "../../../assets/business-coach-005.webp";
 
 export default function AboutHeroSection() {
+  const { t } = useTranslation("about");
+
   return (
     <section className="relative pt-28 pb-16 sm:pt-36 sm:pb-24 bg-slate-50 text-slate-800 overflow-hidden">
       {/* Background Ambient Glow (Light Theme Modern) */}
@@ -15,36 +19,33 @@ export default function AboutHeroSection() {
           <FadeInSection className="lg:col-span-7 space-y-6 text-center lg:text-left">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-600 text-xs font-extrabold uppercase tracking-widest shadow-sm">
               <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse" />
-              About PT. Global Inmarco Sejahtera
+              {t("hero.badge")}
             </div>
 
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-navy-900 tracking-tight leading-[1.15]">
-              Membangun Masa Depan Melalui{" "}
+              {t("hero.titleLead")}{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500">
-                Solusi Terintegrasi
+                {t("hero.titleAccent")}
               </span>
             </h1>
 
             <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-normal max-w-2xl mx-auto lg:mx-0">
-              Transformasi berkelanjutan dari badan usaha CV pada tahun 2011
-              hingga resmi menjadi Perseroan Terbatas (PT) pada Mei 2024. Kami
-              hadir memperkuat sinergi di bidang MICE, Konsultan Strategis,
-              Media Digital, dan Jasa Pengamanan.
+              {t("hero.description")}
             </p>
 
             {/* QUICK HIGHLIGHT BADGES */}
             <div className="pt-2 flex flex-wrap justify-center lg:justify-start gap-3">
               <div className="px-4 py-2.5 rounded-2xl bg-white border border-slate-200/80 shadow-sm flex items-center gap-2 text-xs font-extrabold text-navy-900">
                 <span className="text-blue-600 font-mono font-black">13+</span>{" "}
-                Tahun Pengalaman
+                {t("hero.highlightExperience")}
               </div>
               <div className="px-4 py-2.5 rounded-2xl bg-white border border-slate-200/80 shadow-sm flex items-center gap-2 text-xs font-extrabold text-navy-900">
                 <span className="text-blue-600 font-mono font-black">4</span>{" "}
-                Pilar Utama Jasa
+                {t("hero.highlightPillars")}
               </div>
               <div className="px-4 py-2.5 rounded-2xl bg-white border border-slate-200/80 shadow-sm flex items-center gap-2 text-xs font-extrabold text-navy-900">
                 <span className="text-blue-600 font-mono font-black">100%</span>{" "}
-                Resmi Kemenkumham
+                {t("hero.highlightLegal")}
               </div>
             </div>
           </FadeInSection>
@@ -56,14 +57,14 @@ export default function AboutHeroSection() {
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white">
                 <img
                   src="/og-image.jpg"
-                  alt="Tentang PT Global Inmarco Sejahtera"
+                  alt={t("hero.imageAlt")}
                   className="w-full h-[340px] sm:h-[420px] object-cover object-center transform hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-transparent to-transparent" />
 
                 <div className="absolute bottom-5 left-5 right-5 text-white">
                   <p className="text-[10px] font-extrabold uppercase tracking-widest text-sky-300 font-mono">
-                    Integrated Agency
+                    {t("hero.agencyLabel")}
                   </p>
                   <h3 className="text-lg font-black mt-0.5">
                     PT. Global Inmarco Sejahtera
@@ -74,7 +75,7 @@ export default function AboutHeroSection() {
               {/* Floating Badge Glassmorphism (Mobile Friendly) */}
               <div className="absolute -bottom-6 -left-2 sm:-left-6 bg-white/90 border border-slate-200/80 p-4 rounded-2xl shadow-xl max-w-[210px] space-y-1 backdrop-blur-md hidden sm:block">
                 <p className="text-[10px] font-extrabold uppercase tracking-wider text-slate-400 font-mono">
-                  Milestone Legalitas
+                  {t("hero.milestoneLabel")}
                 </p>
                 <p className="text-xs font-black text-navy-950">
                   CV (2011) → PT (2024)

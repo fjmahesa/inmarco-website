@@ -1,6 +1,9 @@
 import { useState, useRef, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function NavDropdown({ title, items }) {
+  const { t } = useTranslation("navbar");
+
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
 
@@ -27,7 +30,7 @@ export default function NavDropdown({ title, items }) {
           isOpen ? "text-blue-600" : "text-slate-700 hover:text-blue-600"
         }`}
       >
-        <span>{title}</span>
+        <span>{t(title)}</span>
         <svg
           className={`w-4 h-4 transition-transform duration-200 ${
             isOpen ? "rotate-180 text-blue-600" : "text-slate-400"
@@ -60,7 +63,7 @@ export default function NavDropdown({ title, items }) {
               href={item.href}
               className="group flex items-center justify-between px-4 py-3 text-xs font-bold text-slate-700 hover:text-white hover:bg-navy-900 rounded-xl transition-all duration-200 shadow-sm hover:shadow-md hover:translate-x-1"
             >
-              <span>{item.label}</span>
+              <span>{t(item.label)}</span>
               {/* Icon panah kecil yang muncul lebih tajam saat di-hover */}
               <svg
                 className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-200 text-blue-400"

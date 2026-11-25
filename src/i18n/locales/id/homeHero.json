@@ -1,0 +1,39 @@
+{
+  "slides": [
+    {
+      "badge": "Integrated Solutions • Est. 2011",
+      "title": "PT. Global Inmarco Sejahtera",
+      "subtitle": "MICE, Media, Consulting & Security Services",
+      "description": "Mitra strategis terpercaya dengan tata kelola profesional, menghadirkan layanan terintegrasi skala besar untuk instansi pemerintah dan korporasi."
+    },
+    {
+      "badge": "Integrated Solutions • Est. 2011",
+      "title": "Digital Communication",
+      "subtitle": "Kuasai Pasar & Bangun Engagement Berkelanjutan",
+      "description": "Solusi MICE profesional, manajemen event hybrid, kampanye komunikasi digital terukur, dan personal branding untuk memperkuat citra lembaga Anda."
+    },
+    {
+      "badge": "Integrated Solutions • Est. 2011",
+      "title": "Jasa Pengamanan Swasta",
+      "subtitle": "Proteksi Aset, SDM Disiplin & Teknologi Deteksi",
+      "description": "Penyediaan Satpam profesional, Tenaga Ahli Security Assessment, pemantauan CCTV, hingga sweep ruangan berbasis deteksi elektronik (anti-penyadapan)."
+    }
+  ],
+  "controls": {
+    "goToSlide": "Go to slide {{index}}",
+    "previous": "Previous Slide",
+    "next": "Next Slide"
+  },
+  "about": {
+    "imageAlt": "PT Global Inmarco Sejahtera",
+    "imageCaption": "Integrated Agency",
+    "companyName": "PT. Global Inmarco Sejahtera",
+    "badge": "Tentang Kami",
+    "headingPrefix": "Transformasi Menuju",
+    "headingHighlight": "Solusi Terintegrasi & Adaptif",
+    "storyBefore": "Dimulai dari badan usaha berbentuk CV pada tahun 2011, perusahaan kami berkembang pesat hingga resmi bertransformasi menjadi",
+    "storyAfter": "pada 28 Mei 2024 guna menghadirkan ekosistem layanan terintegrasi skala besar bagi pemerintah dan swasta.",
+    "visionLabel": "Visi Perusahaan",
+    "visionQuote": "\"Menjadi perusahaan penyedia jasa dan solusi terintegrasi yang profesional, terpercaya, inovatif, dan berorientasi pada kualitas pelayanan serta kebutuhan klien.\""
+  }
+}

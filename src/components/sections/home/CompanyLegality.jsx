@@ -1,6 +1,9 @@
+import { useTranslation } from "react-i18next";
 import FadeInSection from "../../common/FadeInSection";
 
 export default function CompanyLegality() {
+  const { t } = useTranslation("homeMisc");
+
   return (
     <section
       id="about"
@@ -12,26 +15,28 @@ export default function CompanyLegality() {
           <div className="lg:col-span-6 space-y-5">
             <FadeInSection>
               <span className="text-xs font-extrabold uppercase tracking-widest text-sky-400 bg-sky-500/10 px-4 py-1.5 rounded-full border border-sky-500/20">
-                Tentang Kami
+                {t("legality.badge")}
               </span>
               <h2 className="text-3xl sm:text-4xl font-black tracking-tight text-white mt-3">
-                Transformasi Menuju{" "}
-                <span className="text-sky-400">Layanan Terintegrasi</span>
+                {t("legality.titleLead")}{" "}
+                <span className="text-sky-400">
+                  {t("legality.titleAccent")}
+                </span>
               </h2>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                Perjalanan perusahaan dimulai dari CV yang berdiri pada{" "}
-                <strong className="text-white">14 November 2011</strong>[cite:
-                9]. Seiring bertambahnya cakupan bisnis dan kebutuhan klien,
-                perusahaan bertransformasi menjadi{" "}
+                {t("legality.historyLead")}{" "}
                 <strong className="text-white">
-                  PT. Global Inmarco Sejahtera pada 28 Mei 2024
+                  {t("legality.historyDate")}
+                </strong>
+                [cite: 9]
+                {t("legality.historyMiddle")}{" "}
+                <strong className="text-white">
+                  {t("legality.historyEntity")}
                 </strong>
                 [cite: 9].
               </p>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                Transformasi ini memperkuat tata kelola organisasi agar lebih
-                adaptif dan siap memberikan solusi terpadu mencakup MICE,
-                Konsultan, Media, hingga Jasa Pengamanan Swasta[cite: 9, 11].
+                {t("legality.history2")}[cite: 9, 11].
               </p>
             </FadeInSection>
 
@@ -40,28 +45,28 @@ export default function CompanyLegality() {
               <div className="grid grid-cols-2 gap-4 pt-2">
                 <div className="p-4 rounded-2xl bg-navy-950 border border-slate-800">
                   <span className="text-xs font-bold text-sky-400">
-                    14 Nov 2011
+                    {t("legality.timeline1Date")}
                   </span>
                   [cite: 9]
                   <h4 className="text-sm font-bold text-white mt-0.5">
-                    CV. Global Inmarco
+                    {t("legality.timeline1Title")}
                   </h4>
                   [cite: 9]
                   <p className="text-[11px] text-slate-400 mt-1">
-                    Fondasi pengalaman MICE & komunikasi[cite: 9].
+                    {t("legality.timeline1Desc")}[cite: 9].
                   </p>
                 </div>
                 <div className="p-4 rounded-2xl bg-navy-950 border border-sky-500/30">
                   <span className="text-xs font-bold text-sky-400">
-                    28 Mei 2024
+                    {t("legality.timeline2Date")}
                   </span>
                   [cite: 9]
                   <h4 className="text-sm font-bold text-white mt-0.5">
-                    PT. Global Inmarco
+                    {t("legality.timeline2Title")}
                   </h4>
                   [cite: 9]
                   <p className="text-[11px] text-slate-400 mt-1">
-                    Transformasi PT & tata kelola terintegrasi[cite: 9].
+                    {t("legality.timeline2Desc")}[cite: 9].
                   </p>
                 </div>
               </div>
@@ -75,15 +80,17 @@ export default function CompanyLegality() {
                 <div className="absolute -top-10 -right-10 w-40 h-40 bg-sky-500/10 rounded-full blur-3xl pointer-events-none" />
 
                 <h3 className="text-lg font-bold text-white tracking-tight border-b border-slate-800 pb-4 mb-5 flex items-center justify-between">
-                  <span>Legalitas Perusahaan</span>
+                  <span>{t("legality.tableTitle")}</span>
                   <span className="text-xs font-mono text-sky-400 font-normal">
-                    Official Data
+                    {t("legality.tableLabel")}
                   </span>
                 </h3>
 
                 <div className="space-y-3.5 text-xs">
                   <div className="flex flex-col sm:flex-row sm:justify-between py-2 border-b border-slate-800/60 gap-1 sm:gap-0">
-                    <span className="text-slate-400">Status Badan Usaha</span>
+                    <span className="text-slate-400">
+                      {t("legality.businessStatus")}
+                    </span>
                     <span className="font-bold text-white">
                       PT GLOBAL INMARCO SEJAHTERA
                     </span>
@@ -91,15 +98,19 @@ export default function CompanyLegality() {
                   </div>
 
                   <div className="flex flex-col sm:flex-row sm:justify-between py-2 border-b border-slate-800/60 gap-1 sm:gap-0">
-                    <span className="text-slate-400">No. Akta Notaris</span>
+                    <span className="text-slate-400">
+                      {t("legality.deedNo")}
+                    </span>
                     <span className="font-mono text-slate-200">
-                      No 06 (Tanggal 28 Mei 2024)
+                      {t("legality.deedValue")}
                     </span>
                     [cite: 9]
                   </div>
 
                   <div className="flex flex-col sm:flex-row sm:justify-between py-2 border-b border-slate-800/60 gap-1 sm:gap-0">
-                    <span className="text-slate-400">SK Kemenkumham</span>
+                    <span className="text-slate-400">
+                      {t("legality.decree")}
+                    </span>
                     <span className="font-mono text-sky-400 font-semibold">
                       AHU-0038268.AH.01.01.TAHUN 2024
                     </span>
@@ -107,7 +118,7 @@ export default function CompanyLegality() {
                   </div>
 
                   <div className="flex flex-col sm:flex-row sm:justify-between py-2 border-b border-slate-800/60 gap-1 sm:gap-0">
-                    <span className="text-slate-400">NPWP Perusahaan</span>
+                    <span className="text-slate-400">{t("legality.tax")}</span>
                     <span className="font-mono text-slate-200">
                       20.686.913.3-014.000
                     </span>
@@ -115,9 +126,9 @@ export default function CompanyLegality() {
                   </div>
 
                   <div className="flex flex-col sm:flex-row sm:justify-between py-2 gap-1 sm:gap-0">
-                    <span className="text-slate-400">Bidang Usaha</span>
+                    <span className="text-slate-400">{t("legality.field")}</span>
                     <span className="font-semibold text-slate-200 text-right">
-                      MICE, Konsultan, Media, Jasa Pengamanan
+                      {t("legality.fieldValue")}
                     </span>
                     [cite: 9, 11]
                   </div>

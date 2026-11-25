@@ -1,0 +1,49 @@
+{
+  "contact": {
+    "badge": "Get in Touch",
+    "headingLead": "Contact",
+    "headingAccent": "Us",
+    "description": "Contact us for detailed information about our private security services, digital communication, strategic consulting, and MICE & event management.",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "addressValue": "Operational Office: Menara MTH, 15th Floor, Suite 1508 - Jalan MT Haryono, Tebet, South Jakarta"
+  },
+  "form": {
+    "name": "Name",
+    "namePlaceholder": "Full Name",
+    "phone": "Phone / WhatsApp",
+    "email": "Email Address",
+    "service": "Service Required",
+    "servicePlaceholder": "Select a Service",
+    "serviceOptions": {
+      "digital": "Digital Communication",
+      "event": "Event Management / MICE",
+      "consulting": "Research & Consulting",
+      "security": "Private Security Services",
+      "other": "Other"
+    },
+    "message": "Message",
+    "messagePlaceholder": "Write your requirements or questions here...",
+    "noService": "Not Selected",
+    "submit": "Submit",
+    "sending": "Sending..."
+  },
+  "modal": {
+    "successTitle": "Message Sent!",
+    "successMessage": "Thank you for contacting us. We will respond to your message shortly.",
+    "failureTitle": "Failed to Send",
+    "failureMessage": "Failed to send your message. Please check your details and try again.",
+    "errorTitle": "An Error Occurred",
+    "errorMessage": "There was a problem connecting to the server. Please check your network connection.",
+    "close": "Close"
+  },
+  "bottom": {
+    "tagline": "Integrated Marketing Communication & Event Agency",
+    "home": "Home",
+    "about": "About Us",
+    "service": "Service",
+    "clients": "Our Client",
+    "rights": "All Rights Reserved."
+  }
+}

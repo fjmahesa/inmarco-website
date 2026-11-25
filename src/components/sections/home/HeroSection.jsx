@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import FadeInSection from "../../common/FadeInSection";
 
 // Import aset gambar lokal .webp dari src/assets/
@@ -6,47 +7,47 @@ import bgSlide1 from "../../../assets/business-coach-001.webp";
 import bgSlide2 from "../../../assets/business-coach-002.webp";
 import bgSlide3 from "../../../assets/business-coach-003.webp";
 
-const slides = [
-  {
-    id: 1,
-    badge: "Integrated Solutions • Est. 2011",
-    title: "PT. Global Inmarco Sejahtera",
-    subtitle: "MICE, Media, Consulting & Security Services",
-    description:
-      "Mitra strategis terpercaya dengan tata kelola profesional, menghadirkan layanan terintegrasi skala besar untuk instansi pemerintah dan korporasi.",
-    image: bgSlide1,
-  },
-  {
-    id: 2,
-    badge: "Integrated Solutions • Est. 2011",
-    title: "Digital Communication",
-    subtitle: "Kuasai Pasar & Bangun Engagement Berkelanjutan",
-    description:
-      "Solusi MICE profesional, manajemen event hybrid, kampanye komunikasi digital terukur, dan personal branding untuk memperkuat citra lembaga Anda.",
-    image: bgSlide2,
-  },
-  {
-    id: 3,
-    badge: "Integrated Solutions • Est. 2011",
-    title: "Jasa Pengamanan Swasta",
-    subtitle: "Proteksi Aset, SDM Disiplin & Teknologi Deteksi",
-    description:
-      "Penyediaan Satpam profesional, Tenaga Ahli Security Assessment, pemantauan CCTV, hingga sweep ruangan berbasis deteksi elektronik (anti-penyadapan).",
-    image: bgSlide3,
-  },
-];
-
 export default function HeroSection() {
+  const { t } = useTranslation("homeHero");
   const [currentSlide, setCurrentSlide] = useState(0);
   const touchStartX = useRef(0);
   const touchEndX = useRef(0);
 
+  const slides = [
+    {
+      id: 1,
+      badge: t("slides.0.badge"),
+      title: t("slides.0.title"),
+      subtitle: t("slides.0.subtitle"),
+      description: t("slides.0.description"),
+      image: bgSlide1,
+    },
+    {
+      id: 2,
+      badge: t("slides.1.badge"),
+      title: t("slides.1.title"),
+      subtitle: t("slides.1.subtitle"),
+      description: t("slides.1.description"),
+      image: bgSlide2,
+    },
+    {
+      id: 3,
+      badge: t("slides.2.badge"),
+      title: t("slides.2.title"),
+      subtitle: t("slides.2.subtitle"),
+      description: t("slides.2.description"),
+      image: bgSlide3,
+    },
+  ];
+
+  const slideCount = slides.length;
+
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length);
+      setCurrentSlide((prev) => (prev + 1) % slideCount);
     }, 6000);
     return () => clearInterval(timer);
-  }, []);
+  }, [slideCount]);
 
   const handleTouchStart = (e) => {
     touchStartX.current = e.targetTouches[0].clientX;
@@ -61,9 +62,9 @@ export default function HeroSection() {
     const distance = touchStartX.current - touchEndX.current;
 
     if (distance > 50) {
-      setCurrentSlide((prev) => (prev + 1) % slides.length);
+      setCurrentSlide((prev) => (prev + 1) % slideCount);
     } else if (distance < -50) {
-      setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
+      setCurrentSlide((prev) => (prev === 0 ? slideCount - 1 : prev - 1));
     }
 
     touchStartX.current = 0;
@@ -144,7 +145,7 @@ export default function HeroSection() {
               <button
                 key={index}
                 onClick={() => setCurrentSlide(index)}
-                aria-label={`Go to slide ${index + 1}`}
+                aria-label={t("controls.goToSlide", { index: index + 1 })}
                 className={`transition-all duration-300 rounded-full cursor-pointer ${
                   index === currentSlide
                     ? "w-6 sm:w-8 h-2 bg-sky-400"
@@ -159,10 +160,10 @@ export default function HeroSection() {
             <button
               onClick={() =>
                 setCurrentSlide((prev) =>
-                  prev === 0 ? slides.length - 1 : prev - 1,
+                  prev === 0 ? slideCount - 1 : prev - 1,
                 )
               }
-              aria-label="Previous Slide"
+              aria-label={t("controls.previous")}
               className="p-2.5 rounded-full bg-navy-900/80 hover:bg-sky-400 text-white hover:text-navy-950 border border-slate-800 transition-all active:scale-95 cursor-pointer"
             >
               <svg
@@ -181,9 +182,9 @@ export default function HeroSection() {
             </button>
             <button
               onClick={() =>
-                setCurrentSlide((prev) => (prev + 1) % slides.length)
+                setCurrentSlide((prev) => (prev + 1) % slideCount)
               }
-              aria-label="Next Slide"
+              aria-label={t("controls.next")}
               className="p-2.5 rounded-full bg-navy-900/80 hover:bg-sky-400 text-white hover:text-navy-950 border border-slate-800 transition-all active:scale-95 cursor-pointer"
             >
               <svg

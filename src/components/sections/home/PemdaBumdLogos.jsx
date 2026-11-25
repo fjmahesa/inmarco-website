@@ -1,13 +1,16 @@
+import { useTranslation } from "react-i18next";
 import FadeInSection from "../../common/FadeInSection";
 
-const pemdaBumdLogos = [
-  { name: "Pemerintah Kota Depok", src: "/kotadepok.webp" },
-  { name: "Pemerintah Kabupaten Cianjur", src: "/kab.cianjur.webp" },
-  { name: "Bank Sumsel Babel", src: "/banksumselbabel.webp" },
-  { name: "PDAM Tirta Bhagasasi", src: "/tirtabhagasi.webp" },
-];
-
 export default function PemdaBumdLogos() {
+  const { t } = useTranslation("homeLists");
+
+  const pemdaBumdLogos = [
+    { name: t("regional.logos.0.name"), src: "/kotadepok.webp" },
+    { name: t("regional.logos.1.name"), src: "/kab.cianjur.webp" },
+    { name: t("regional.logos.2.name"), src: "/banksumselbabel.webp" },
+    { name: t("regional.logos.3.name"), src: "/tirtabhagasi.webp" },
+  ];
+
   // Duplikasi array logo agar animasi infinite scroll bergulir mulus tanpa jeda
   const duplicatedLogos = [
     ...pemdaBumdLogos,
@@ -22,21 +25,20 @@ export default function PemdaBumdLogos() {
         {/* Header Section */}
         <FadeInSection className="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
           <span className="text-xs font-extrabold uppercase tracking-widest text-emerald-600 bg-emerald-50 px-4 py-1.5 rounded-full border border-emerald-100">
-            Kemitraan Daerah & BUMD
+            {t("regional.eyebrow")}
           </span>
           <h2 className="mt-4 text-3xl sm:text-5xl font-black text-navy-900 tracking-tight">
-            Pemerintah Daerah & BUMD
+            {t("regional.title")}
           </h2>
           <p className="mt-3 text-xs sm:text-base text-slate-600 font-medium">
-            Membangun tata kelola dan pengamanan operasional bagi pemerintah
-            kota, kabupaten, serta BUMD daerah.
+            {t("regional.description")}
           </p>
         </FadeInSection>
 
         {/* Carousel Container dengan Efek Gradient Mask */}
         <FadeInSection>
           <div className="relative w-full overflow-hidden rounded-3xl bg-white border border-slate-200/80 py-8 sm:py-12 shadow-sm">
-            {/* Soft Gradient Overlay di Ujung Kiri & Kanan */}
+            {/* Soft Gradient Overlay di Ujung Layout (Kiri & Kanan) */}
             <div className="absolute top-0 bottom-0 left-0 w-16 sm:w-32 bg-gradient-to-r from-white via-white/80 to-transparent z-20 pointer-events-none" />
             <div className="absolute top-0 bottom-0 right-0 w-16 sm:w-32 bg-gradient-to-l from-white via-white/80 to-transparent z-20 pointer-events-none" />
 

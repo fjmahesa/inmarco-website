@@ -1,0 +1,198 @@
+{
+  "services": {
+    "eyebrow": "Layanan Kami",
+    "title": "Integrated Business Capabilities",
+    "description": "Solusi komprehensif untuk mendukung pertumbuhan brand Anda dari perencanaan hingga operasional.",
+    "cta": "Consultation Now",
+    "cards": [
+      {
+        "title": "Visioning",
+        "subtitle": "Merumuskan arah dan strategi jangka panjang brand Anda."
+      },
+      {
+        "title": "Planning",
+        "subtitle": "Perencanaan eksekusi kampanye digital yang terstruktur."
+      },
+      {
+        "title": "Research",
+        "subtitle": "Riset pasar dan analisis kompetitor mendalam."
+      },
+      {
+        "title": "Networking",
+        "subtitle": "Membangun relasi ekosistem mitra & influencer strategis."
+      },
+      {
+        "title": "Branding",
+        "subtitle": "Membentuk identitas visual dan persepsi positif audiens."
+      },
+      {
+        "title": "Marketing",
+        "subtitle": "Strategi pemasaran terpadu untuk tingkatkan konversi."
+      },
+      {
+        "title": "Hiring",
+        "subtitle": "Pengembangan talenta dan SDM bidang pemasaran."
+      },
+      {
+        "title": "Operations",
+        "subtitle": "Manajemen operasional kegiatan event & kampanye."
+      }
+    ]
+  },
+  "projects": {
+    "eyebrow": "Our Services",
+    "title": "Solusi Terintegrasi Untuk",
+    "titleAccent": "Pertumbuhan Organisasi",
+    "description": "PT. Global Inmarco Sejahtera menghadirkan ekosistem layanan lengkap mulai dari manajemen event, komunikasi digital, hingga jasa pengamanan swasta.",
+    "prevPage": "Previous Page",
+    "nextPage": "Next Page",
+    "goToPage": "Go to page {{page}}",
+    "cardCta": "Konsultasikan Layanan Ini",
+    "cards": [
+      {
+        "title": "MICE & Event Management",
+        "subtitle": "Meeting, Incentive, Convention & Exhibition",
+        "description": "Layanan event profesional mulai dari konsep acara, produksi, operasional lapangan, live streaming hybrid, hingga evaluasi kegiatan.",
+        "badge": "Core Service",
+        "features": [
+          "Meeting, Incentive, Convention & Exhibition",
+          "Live Streaming & Hybrid Events",
+          "Event Production & Management",
+          "Brand & Product Launching"
+        ]
+      },
+      {
+        "title": "Strategic Consulting",
+        "subtitle": "Konsultasi Bisnis & Perencanaan Strategis",
+        "description": "Pendampingan strategi komunikasi dan bisnis untuk organisasi, perusahaan, dan instansi pemerintah berdasarkan riset & analisis data.",
+        "badge": "Strategic Partner",
+        "features": [
+          "Business & Strategic Planning",
+          "Digital Consultancy",
+          "Media Monitoring & Social Listening",
+          "Branding Strategy & Positioning"
+        ]
+      },
+      {
+        "title": "Media & Digital Communication",
+        "subtitle": "Kuasai Media Digital & Kelola Persepsi Publik",
+        "description": "Pengelolaan komunikasi digital terintegrasi untuk membangun keterlibatan audiens, kampanye digital, dan personal branding.",
+        "badge": "Digital Growth",
+        "features": [
+          "Social Media Management & Marketing",
+          "Digital Campaign & Advertising",
+          "Personal Branding & Public Perception",
+          "Creative Content & Video Production"
+        ]
+      },
+      {
+        "title": "Jasa Pengamanan Swasta",
+        "subtitle": "Security Services, Assessment & Technology",
+        "description": "Penyediaan tenaga Satpam profesional, tenaga ahli sistem pengamanan, serta sweep pembersihan ruangan berbasis deteksi elektronik.",
+        "badge": "Featured Unit",
+        "features": [
+          "Jasa Satpam & Pengamanan Fisik Facility",
+          "Tenaga Ahli & Security Risk Assessment",
+          "Pemeriksaan Ruangan Berbasis Deteksi Elektronik",
+          "Integrasi CCTV & Security Monitoring Center"
+        ]
+      },
+      {
+        "title": "Education, Training & Tour",
+        "subtitle": "Pemberdayaan SDM & Layanan Perjalanan",
+        "description": "Program edukasi literasi digital, pengembangan UMKM, pelatihan kewirausahaan, serta paket perjalanan terintegrasi.",
+        "badge": "Empowerment",
+        "features": [
+          "Pelatihan Literasi Digital & Content Creator",
+          "Pengembangan Usaha & Branding UMKM",
+          "Workshop Vision & Goal Setting",
+          "Package Tour & Event Perjalanan"
+        ]
+      }
+    ]
+  },
+  "workflow": {
+    "eyebrow": "Work Process",
+    "title": "“Inmarco – Integrated Marketing Communication”",
+    "description": "Metodologi 6 langkah yang teruji untuk membantu brand Anda melangkah lebih pasti.",
+    "stepLabel": "Langkah",
+    "steps": [
+      {
+        "title": "We Meet You & Discus",
+        "tagline": "Langkah Pertama",
+        "description": "Pertemuan & diskusi mendalam untuk memetakan ekspektasi, kebutuhan, serta tujuan utama brand Anda."
+      },
+      {
+        "title": "Understand Your Business Process",
+        "tagline": "Analisis Internal",
+        "description": "Mempelajari alur operasional dan keunikan ekosistem bisnis Anda agar solusi yang dirancang tepat sasaran."
+      },
+      {
+        "title": "Data Gathering & Analysis",
+        "tagline": "Riset Komprehensif",
+        "description": "Mengumpulkan data riil mengenai kondisi pasar, kompetitor, serta tren audiens sebagai landasan strategi."
+      },
+      {
+        "title": "Campaign Ideas & Concept",
+        "tagline": "Pengembangan Ide",
+        "description": "Merumuskan konsep kreatif dan pesan kunci komunikasi pemasaran yang berdaya pikat tinggi."
+      },
+      {
+        "title": "Grow Your Business",
+        "tagline": "Eksekusi Strategis",
+        "description": "Pelaksanaan kampanye terpadu melalui berbagai kanal digital dan event untuk mengakselerasi pertumbuhan bisnis."
+      },
+      {
+        "title": "Welcome To Happy Client Club",
+        "tagline": "Kemitraan Berkelanjutan",
+        "description": "Evaluasi performa berkala dan pendampingan jangka panjang sebagai mitra terpercaya bisnis Anda."
+      }
+    ]
+  },
+  "clients": {
+    "eyebrow": "Our Clients & Partners",
+    "title": "Pemerintahan",
+    "description": "Dipercaya oleh berbagai kementerian, lembaga negara, dan pemerintah daerah.",
+    "logos": [
+      { "name": "DPRD DKI Jakarta" },
+      { "name": "DPPBJ DKI Jakarta" },
+      { "name": "Kemkominfo / Komdigi" },
+      { "name": "Bank Indonesia" },
+      { "name": "Kemenko Perekonomian" },
+      { "name": "Dinas Perhubungan" },
+      { "name": "Badan Pusat Statistik" },
+      { "name": "BAKTI Kominfo" },
+      { "name": "Pos Indonesia" }
+    ]
+  },
+  "education": {
+    "eyebrow": "Sektor Akademik",
+    "title": "Pendidikan",
+    "description": "Kemitraan strategis bersama perguruan tinggi dan institusi pendidikan tinggi nasional.",
+    "logos": [
+      { "name": "Fakultas Psikologi Universitas Indonesia" },
+      { "name": "Sekolah Tinggi Sandi Negara (STSN)" }
+    ]
+  },
+  "corporate": {
+    "eyebrow": "Sektor Swasta & BUMD",
+    "title": "Corporate",
+    "description": "Dipercaya oleh berbagai perusahaan korporasi, perbankan, dan BUMD terkemuka.",
+    "logos": [
+      { "name": "Nusantara Infrastructure" },
+      { "name": "BII Maybank" },
+      { "name": "Orico Balimor Finance" }
+    ]
+  },
+  "regional": {
+    "eyebrow": "Kemitraan Daerah & BUMD",
+    "title": "Pemerintah Daerah & BUMD",
+    "description": "Membangun tata kelola dan pengamanan operasional bagi pemerintah kota, kabupaten, serta BUMD daerah.",
+    "logos": [
+      { "name": "Pemerintah Kota Depok" },
+      { "name": "Pemerintah Kabupaten Cianjur" },
+      { "name": "Bank Sumsel Babel" },
+      { "name": "PDAM Tirta Bhagasasi" }
+    ]
+  }
+}

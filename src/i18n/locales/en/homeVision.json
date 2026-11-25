@@ -1,0 +1,132 @@
+{
+  "vision": {
+    "badge": "Company Vision & Mission",
+    "headingPrefix": "Our Core",
+    "headingHighlight": "Values & Vision",
+    "quote": "“To become a professional, trusted, and innovative provider of integrated services and solutions, focused on service quality and client needs.”",
+    "cardFooter": "Core Value Pillar"
+  },
+  "controls": {
+    "previous": "Previous Slide",
+    "next": "Next Slide"
+  },
+  "missionPillars": [
+    {
+      "title": "Quality & Integrity",
+      "subtitle": "Pillar 01",
+      "description": "Delivering professional services and consistent client satisfaction."
+    },
+    {
+      "title": "Creative Solutions",
+      "subtitle": "Pillar 02",
+      "description": "Developing innovations tailored to the needs of government agencies and companies."
+    },
+    {
+      "title": "Integration",
+      "subtitle": "Pillar 03",
+      "description": "Combining people, technology, communication, and management into one unified system."
+    },
+    {
+      "title": "Partnership",
+      "subtitle": "Pillar 04",
+      "description": "Building long-term relationships of mutual trust with stakeholders."
+    },
+    {
+      "title": "Skilled Workforce",
+      "subtitle": "Pillar 05",
+      "description": "Developing competent, disciplined, professional, and responsible people."
+    }
+  ],
+  "business": {
+    "badge": "Core Business Pillars",
+    "headingPrefix": "Business",
+    "headingHighlight": "SECTORS",
+    "description": "Four core service pillars of PT. Global Inmarco Sejahtera, fully integrated to support the growth of your agency and company."
+  },
+  "businessPillars": [
+    {
+      "title": "MICE & Event Organizer",
+      "subtitle": "Meeting, Incentive, Convention, Exhibition",
+      "description": "Management of strategic events, conventions, exhibitions, and integrated hybrid event & live streaming production."
+    },
+    {
+      "title": "Strategic Consultant",
+      "subtitle": "Strategic Advisory & Communication",
+      "description": "Business strategy design, public communication, brand positioning, and measurable media monitoring."
+    },
+    {
+      "title": "Media & Digital Ecosystem",
+      "subtitle": "Digital Ecosystem & Communication Management",
+      "description": "Social media management, digital campaigns, personal branding, and creative visual content production."
+    },
+    {
+      "title": "Private Security Services",
+      "subtitle": "Asset, People & Technology Protection",
+      "description": "Professional security guards, security assessment, CCTV monitoring, and electronic detection sweeps."
+    }
+  ],
+  "mice": {
+    "imageAlt": "MICE Room Atmosphere",
+    "badge": "Event & Organizer",
+    "headingPrefix": "Professional",
+    "headingAcronym": "MICE",
+    "headingSuffix": "Services",
+    "description": "We provide comprehensive services for the needs of government, corporations, organizations, and institutions.",
+    "footer": "Integrated Event Solutions"
+  },
+  "miceItems": [
+    {
+      "letter": "M",
+      "title": "Meeting",
+      "description": "Strategic meeting management."
+    },
+    {
+      "letter": "I",
+      "title": "Incentive",
+      "description": "Corporate incentive programs."
+    },
+    {
+      "letter": "C",
+      "title": "Convention",
+      "description": "Large-scale conventions."
+    },
+    {
+      "letter": "E",
+      "title": "Exhibition",
+      "description": "Trade shows and exhibitions."
+    }
+  ],
+  "consulting": {
+    "badge": "Strategic Consulting",
+    "headingPrefix": "Guidance & Strategy",
+    "headingHighlight": "Consulting",
+    "description": "Full support for organizations and government institutions in designing measurable, impactful communication strategies.",
+    "coreFocus": "Core Focus",
+    "centerTitlePrefix": "Strategic",
+    "centerTitleSuffix": "Solutions",
+    "coreHub": "Core Hub",
+    "centerTitleMobile": "Strategic Solutions"
+  },
+  "consultingServices": {
+    "left": [
+      {
+        "title": "Business Consulting",
+        "description": "Business and organizational strategy development."
+      },
+      {
+        "title": "Social Media Strategy",
+        "description": "Social media mapping and tactics."
+      }
+    ],
+    "right": [
+      {
+        "title": "Digital Communication",
+        "description": "Communication architecture for the digital era."
+      },
+      {
+        "title": "Branding",
+        "description": "Strengthening institutional identity and image."
+      }
+    ]
+  }
+}

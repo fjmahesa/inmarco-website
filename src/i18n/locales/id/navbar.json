@@ -1,0 +1,15 @@
+{
+  "brand": {
+    "alt": "INMARCO.ID"
+  },
+  "nav": {
+    "home": "Beranda",
+    "about": "Tentang Kami",
+    "services": "Layanan",
+    "client": "Klien Kami",
+    "contact": "Hubungi Kami"
+  },
+  "mobile": {
+    "menu": "Buka/Tutup Menu"
+  }
+}

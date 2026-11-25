@@ -1,0 +1,51 @@
+{
+  "hero": {
+    "badge": "About PT. Global Inmarco Sejahtera",
+    "titleLead": "Building the Future Through",
+    "titleAccent": "Integrated Solutions",
+    "description": "A continuous transformation from a CV business entity in 2011 to officially becoming a Limited Liability Company (PT) in May 2024. We strengthen synergy across MICE, Strategic Consulting, Digital Media, and Security Services.",
+    "highlightExperience": "Years of Experience",
+    "highlightPillars": "Core Service Pillars",
+    "highlightLegal": "Officially Registered with Kemenkumham",
+    "imageAlt": "About PT Global Inmarco Sejahtera",
+    "agencyLabel": "Integrated Agency",
+    "milestoneLabel": "Legal Milestone"
+  },
+  "credentials": {
+    "badge": "Official Credentials",
+    "title": "Legal Status & Company Data",
+    "registered": "Officially Registered with Kemenkumham RI",
+    "entityNameLabel": "Business Entity Name",
+    "deedNumberLabel": "Deed of Establishment No.",
+    "deedNumberValue": "No. 06 dated 28 May 2024",
+    "decreeLabel": "SK Kemenkumham",
+    "taxLabel": "Company NPWP"
+  },
+  "values": {
+    "heading": "• Core Company Values",
+    "quality": {
+      "title": "Quality & Integrity",
+      "description": "Delivering professional services with a focus on quality and client satisfaction."
+    },
+    "creative": {
+      "title": "Creative & Innovative Solutions",
+      "description": "Developing fresh ideas tailored to the needs of government agencies and companies."
+    },
+    "integration": {
+      "title": "Systems & HR Integration",
+      "description": "Combining human resources, technology, communication, and integrated management."
+    },
+    "partnership": {
+      "title": "Sustainable Partnerships",
+      "description": "Building long-term relationships founded on mutual trust."
+    }
+  },
+  "sio": {
+    "badge": "Legality & Permits",
+    "title": "Operational License for Security Services",
+    "description": "Verified official operational permit documents for the security services of PT Global Inmarco Sejahtera.",
+    "downloadButton": "Download / Open Document",
+    "previewUnsupported": "Direct PDF preview is not supported by your browser.",
+    "openButton": "Click to Open the SIO Document"
+  }
+}

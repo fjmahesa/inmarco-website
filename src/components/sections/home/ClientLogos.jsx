@@ -1,18 +1,21 @@
+import { useTranslation } from "react-i18next";
 import FadeInSection from "../../common/FadeInSection";
 
-const governmentLogos = [
-  { name: "DPRD DKI Jakarta", src: "/dprd_dki_jakarta.webp" },
-  { name: "DPPBJ DKI Jakarta", src: "/bppbj_dki_jakarta.webp" },
-  { name: "Kemkominfo / Komdigi", src: "/komdigi.webp" },
-  { name: "Bank Indonesia", src: "/BI.webp" },
-  { name: "Kemenko Perekonomian", src: "/menkoperekonomian.webp" },
-  { name: "Dinas Perhubungan", src: "/dishub.webp" },
-  { name: "Badan Pusat Statistik", src: "/bps.webp" },
-  { name: "BAKTI Kominfo", src: "/bakti.webp" },
-  { name: "Pos Indonesia", src: "/pos-indonesia.webp" },
-];
-
 export default function ClientLogos() {
+  const { t } = useTranslation("homeLists");
+
+  const governmentLogos = [
+    { name: t("clients.logos.0.name"), src: "/dprd_dki_jakarta.webp" },
+    { name: t("clients.logos.1.name"), src: "/bppbj_dki_jakarta.webp" },
+    { name: t("clients.logos.2.name"), src: "/komdigi.webp" },
+    { name: t("clients.logos.3.name"), src: "/BI.webp" },
+    { name: t("clients.logos.4.name"), src: "/menkoperekonomian.webp" },
+    { name: t("clients.logos.5.name"), src: "/dishub.webp" },
+    { name: t("clients.logos.6.name"), src: "/bps.webp" },
+    { name: t("clients.logos.7.name"), src: "/bakti.webp" },
+    { name: t("clients.logos.8.name"), src: "/pos-indonesia.webp" },
+  ];
+
   // Duplikasi array logo agar animasi berjalan looping tanpa jeda/patah
   const duplicatedLogos = [...governmentLogos, ...governmentLogos];
 
@@ -25,14 +28,13 @@ export default function ClientLogos() {
         {/* Header Section */}
         <FadeInSection className="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
           <span className="text-xs font-extrabold uppercase tracking-widest text-blue-600 bg-blue-50 px-4 py-1.5 rounded-full border border-blue-100">
-            Our Clients & Partners
+            {t("clients.eyebrow")}
           </span>
           <h2 className="mt-4 text-3xl sm:text-5xl font-black text-navy-900 tracking-tight">
-            Pemerintahan
+            {t("clients.title")}
           </h2>
           <p className="mt-3 text-xs sm:text-base text-slate-600 font-medium">
-            Dipercaya oleh berbagai kementerian, lembaga negara, dan pemerintah
-            daerah.
+            {t("clients.description")}
           </p>
         </FadeInSection>
 

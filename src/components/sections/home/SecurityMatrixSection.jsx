@@ -1,108 +1,107 @@
+import { useTranslation } from "react-i18next";
 import FadeInSection from "../../common/FadeInSection";
 
 // Import aset gambar background lokal .webp dari src/assets/
 import bgSecurity from "../../../assets/business-coach-004.webp";
 
-const securityFeatures = [
-  {
-    category: "Preventif & Strategi",
-    title: "Tenaga Ahli Security Assessment",
-    description:
-      "Perancangan sistem pengamanan, analisis risiko keamanan, evaluasi operasional, dan penyusunan SOP pengamanan instansi.",
-    badge: "Manusia x Preventif",
-    icon: (
-      <svg
-        className="w-5 h-5"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"
-        />
-      </svg>
-    ),
-  },
-  {
-    category: "Layanan Lapangan",
-    title: "Jasa Satpam Profesional",
-    description:
-      "Penyediaan personel Satpam disiplin untuk penjagaan akses, patroli area, pengawasan pengunjung, dan penanganan situasi awal.",
-    badge: "Manusia x Aktif",
-    icon: (
-      <svg
-        className="w-5 h-5"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-        />
-      </svg>
-    ),
-  },
-  {
-    category: "Fitur Khusus Berbasis Teknologi",
-    title: "Pemeriksaan & Deteksi Elektronik",
-    description:
-      "Pembersihan (Security Sweep) ruang kerja, ruang rapat, dan pimpinan dari potensi perangkat elektronik/penyadap yang tidak semestinya.",
-    badge: "Teknologi x Preventif",
-    highlight: true,
-    icon: (
-      <svg
-        className="w-5 h-5"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-        />
-      </svg>
-    ),
-  },
-  {
-    category: "Sistem Pemantauan",
-    title: "Integrasi CCTV & Monitoring Center",
-    description:
-      "Instalasi, pemantauan akses area, dan integrasi sistem monitoring untuk melengkapi pengamanan berbasis sumber daya manusia.",
-    badge: "Teknologi x Aktif",
-    icon: (
-      <svg
-        className="w-5 h-5"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
-        />
-      </svg>
-    ),
-  },
-];
-
 export default function SecurityMatrixSection() {
+  const { t } = useTranslation("homeDigital");
+
+  const securityFeatures = [
+    {
+      category: t("matrix.features.0.category"),
+      title: t("matrix.features.0.title"),
+      description: t("matrix.features.0.description"),
+      badge: t("matrix.features.0.badge"),
+      icon: (
+        <svg
+          className="w-5 h-5"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"
+          />
+        </svg>
+      ),
+    },
+    {
+      category: t("matrix.features.1.category"),
+      title: t("matrix.features.1.title"),
+      description: t("matrix.features.1.description"),
+      badge: t("matrix.features.1.badge"),
+      icon: (
+        <svg
+          className="w-5 h-5"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+          />
+        </svg>
+      ),
+    },
+    {
+      category: t("matrix.features.2.category"),
+      title: t("matrix.features.2.title"),
+      description: t("matrix.features.2.description"),
+      badge: t("matrix.features.2.badge"),
+      highlight: true,
+      icon: (
+        <svg
+          className="w-5 h-5"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+          />
+        </svg>
+      ),
+    },
+    {
+      category: t("matrix.features.3.category"),
+      title: t("matrix.features.3.title"),
+      description: t("matrix.features.3.description"),
+      badge: t("matrix.features.3.badge"),
+      icon: (
+        <svg
+          className="w-5 h-5"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
+          />
+        </svg>
+      ),
+    },
+  ];
+
   return (
     <section className="py-20 sm:py-28 text-white relative overflow-hidden bg-navy-950">
       {/* Background Gambar Visual */}
       <div className="absolute inset-0 z-0">
         <img
           src={bgSecurity}
-          alt="Security Services Background"
+          alt={t("matrix.alt")}
           className="w-full h-full object-cover object-center filter brightness-[0.7]"
         />
         {/* Overlay Biru Navy */}
@@ -117,16 +116,14 @@ export default function SecurityMatrixSection() {
         <FadeInSection>
           <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
             <span className="text-xs font-extrabold uppercase tracking-widest text-sky-400 bg-sky-500/10 px-4 py-1.5 rounded-full border border-sky-500/20">
-              Security Services Unit
+              {t("matrix.badge")}
             </span>
             <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-white leading-tight">
-              Keamanan Berbasis Teknologi dan{" "}
-              <span className="text-sky-400">Deteksi</span>
+              {t("matrix.titleLead")}{" "}
+              <span className="text-sky-400">{t("matrix.titleAccent")}</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-              Integrasi sempurna antara kedisiplinan sumber daya manusia,
-              perancangan sistem tenaga ahli, dan teknologi deteksi elektronik
-              mutakhir untuk perlindungan aset vital instansi Anda.
+              {t("matrix.description")}
             </p>
           </div>
         </FadeInSection>
@@ -176,12 +173,10 @@ export default function SecurityMatrixSection() {
             <div className="space-y-2">
               <h4 className="text-base font-bold text-white flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-sky-400 animate-pulse" />
-                Cakupan Fasilitas & Area Pengamanan
+                {t("matrix.banner.title")}
               </h4>
               <p className="text-xs text-slate-400">
-                Layanan dirancang mendukung Instansi Pemerintah, Perkantoran,
-                Rumah Dinas, Perbankan, Area Komersial, hingga Event MICE skala
-                nasional.
+                {t("matrix.banner.description")}
               </p>
             </div>
 
@@ -189,7 +184,7 @@ export default function SecurityMatrixSection() {
               href="#contact"
               className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-sky-400 hover:bg-sky-300 text-navy-950 font-extrabold text-xs shadow-lg shadow-sky-400/20 transition-all shrink-0"
             >
-              Konsultasi Sistem Keamanan
+              {t("matrix.banner.cta")}
             </a>
           </div>
         </FadeInSection>

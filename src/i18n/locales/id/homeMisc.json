@@ -1,0 +1,170 @@
+{
+  "work": {
+    "badge": "Work Methodology",
+    "titleLead": "Pendekatan Kerja",
+    "titleAccent": "Terintegrasi",
+    "description": "Metodologi 6 langkah terstruktur PT. Global Inmarco Sejahtera untuk memastikan setiap proyek berjalan terukur, profesional, dan memberikan dampak nyata.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "UNDERSTAND",
+        "subtitle": "Memahami Kebutuhan",
+        "description": "Mendalami kebutuhan, tujuan, tantangan, serta karakteristik unik organisasi atau perusahaan Anda."
+      },
+      {
+        "number": "02",
+        "title": "ANALYZE",
+        "subtitle": "Analisis Data",
+        "description": "Mengumpulkan informasi dan menganalisis data relevan secara mendalam untuk merumuskan landasan strategi."
+      },
+      {
+        "number": "03",
+        "title": "STRATEGIZE",
+        "subtitle": "Perancangan Konsep",
+        "description": "Menyusun strategi terukur, arsitektur komunikasi, serta ide kampanye/eksekusi yang inovatif."
+      },
+      {
+        "number": "04",
+        "title": "EXECUTE",
+        "subtitle": "Eksekusi Program",
+        "description": "Melaksanakan program secara presisi dengan dukungan penuh SDM berpengalaman dan teknologi terintegrasi."
+      },
+      {
+        "number": "05",
+        "title": "MONITOR",
+        "subtitle": "Pengawasan Kualitas",
+        "description": "Melakukan pengawasan berkala selama pelaksanaan untuk menjamin kualitas layanan tetap terjaga optimal."
+      },
+      {
+        "number": "06",
+        "title": "EVALUATE",
+        "subtitle": "Evaluasi & Rekomendasi",
+        "description": "Evaluasi menyeluruh serta pemberian rekomendasi strategis untuk pengembangan bisnis berkelanjutan."
+      }
+    ],
+    "stepProgress": "Tahap {{step}} dari 6"
+  },
+  "trust": {
+    "badge": "Proven Track Record",
+    "titleLead": "Rekam Jejak",
+    "titleAccent": "Kepercayaan",
+    "description": "Kepercayaan jangka panjang dari institusi pemerintahan dan perusahaan skala nasional.",
+    "alt": "Gedung Perkotaan",
+    "items": [
+      {
+        "title": "Pemerintah Provinsi DKI Jakarta (Kantor Gubernur)",
+        "description": "Layanan pengamanan lingkungan kantor pemerintahan.",
+        "badge": "Sektor Pemerintah"
+      },
+      {
+        "title": "Pemerintah Provinsi DKI Jakarta (Badan Pengadaan Barang/Jasa)",
+        "description": "Pengamanan operasional lingkungan kerja.",
+        "badge": "Sektor Pemerintah"
+      },
+      {
+        "title": "DPRD Provinsi DKI Jakarta",
+        "description": "Pengamanan fasilitas rumah dinas dan kantor pimpinan.",
+        "badge": "Institusi Publik"
+      },
+      {
+        "title": "PT Insight Investment Management Jakarta",
+        "description": "Dukungan keamanan operasional perusahaan.",
+        "badge": "Sektor Korporasi"
+      }
+    ]
+  },
+  "commitment": {
+    "badge": "Core Principles",
+    "titleLead": "Komitmen",
+    "titleAccent": "Berkelanjutan",
+    "alt": "Suasana Diskusi Tim",
+    "pillars": [
+      {
+        "full": "Profesionalisme & Integritas",
+        "line1": "Profesionalisme",
+        "line2": "& Integritas"
+      },
+      {
+        "full": "Ketepatan & Komunikasi",
+        "line1": "Ketepatan &",
+        "line2": "Komunikasi"
+      },
+      {
+        "full": "Orientasi Kebutuhan Klien",
+        "line1": "Orientasi",
+        "line2": "Kebutuhan Klien"
+      }
+    ],
+    "statement": "Kami percaya keberhasilan tidak hanya ditentukan oleh eksekusi tugas, tetapi oleh kapasitas untuk menjadi mitra strategis yang adaptif dan dapat diandalkan."
+  },
+  "instagram": {
+    "badge": "Social Media",
+    "title": "Ikuti Kami Di Instagram",
+    "description": "Kunjungi profil Instagram resmi kami",
+    "handle": "@inmarco.indonesia",
+    "alt": "INMARCO Logo",
+    "follow": "Follow on Instagram",
+    "frameTitle": "Instagram Feed INMARCO"
+  },
+  "preview": {
+    "badge": "Security Services Unit",
+    "titleLead": "Matriks Keamanan Terpadu",
+    "titleAccent": "360°",
+    "description": "Integrasi sempurna antara kedisiplinan sumber daya manusia, perancangan sistem tenaga ahli, dan teknologi deteksi elektronik mutakhir untuk perlindungan aset vital instansi Anda.",
+    "features": [
+      {
+        "category": "Preventif & Strategi",
+        "title": "Tenaga Ahli Security Assessment",
+        "description": "Perancangan sistem pengamanan, analisis risiko keamanan, evaluasi operasional, dan penyusunan SOP pengamanan instansi.",
+        "badge": "Manusia x Preventif"
+      },
+      {
+        "category": "Layanan Lapangan",
+        "title": "Jasa Satpam Profesional",
+        "description": "Penyediaan personel Satpam disiplin untuk penjagaan akses, patroli area, pengawasan pengunjung, dan penanganan situasi awal.",
+        "badge": "Manusia x Aktif"
+      },
+      {
+        "category": "Fitur Khusus Berbasis Teknologi",
+        "title": "Pemeriksaan & Deteksi Elektronik",
+        "description": "Pembersihan (Security Sweep) ruang kerja, ruang rapat, dan pimpinan dari potensi perangkat elektronik/penyadap yang tidak semestinya.",
+        "badge": "Teknologi x Preventif"
+      },
+      {
+        "category": "Sistem Pemantauan",
+        "title": "Integrasi CCTV & Monitoring Center",
+        "description": "Instalasi, pemantauan akses area, dan integrasi sistem monitoring untuk melengkapi pengamanan berbasis sumber daya manusia.",
+        "badge": "Teknologi x Aktif"
+      }
+    ],
+    "coverageTitle": "Cakupan Fasilitas & Area Pengamanan",
+    "coverageDescription": "Layanan dirancang mendukung Instansi Pemerintah, Perkantoran, Rumah Dinas, Perbankan, Area Komersial, hingga Event MICE skala nasional.",
+    "cta": "Konsultasi Sistem Keamanan",
+    "bgAlt": "Security Services Background"
+  },
+  "legality": {
+    "badge": "Tentang Kami",
+    "titleLead": "Transformasi Menuju",
+    "titleAccent": "Layanan Terintegrasi",
+    "historyLead": "Perjalanan perusahaan dimulai dari CV yang berdiri pada",
+    "historyDate": "14 November 2011",
+    "historyMiddle": ". Seiring bertambahnya cakupan bisnis dan kebutuhan klien, perusahaan bertransformasi menjadi",
+    "historyEntity": "PT. Global Inmarco Sejahtera pada 28 Mei 2024",
+    "history2": "Transformasi ini memperkuat tata kelola organisasi agar lebih adaptif dan siap memberikan solusi terpadu mencakup MICE, Konsultan, Media, hingga Jasa Pengamanan Swasta",
+    "timeline1Date": "14 Nov 2011",
+    "timeline1Title": "CV. Global Inmarco",
+    "timeline1Desc": "Fondasi pengalaman MICE & komunikasi",
+    "timeline2Date": "28 Mei 2024",
+    "timeline2Title": "PT. Global Inmarco",
+    "timeline2Desc": "Transformasi PT & tata kelola terintegrasi",
+    "tableTitle": "Legalitas Perusahaan",
+    "tableLabel": "Official Data",
+    "businessStatus": "Status Badan Usaha",
+    "deedNo": "No. Akta Notaris",
+    "deedValue": "No 06 (Tanggal 28 Mei 2024)",
+    "decree": "SK Kemenkumham",
+    "tax": "NPWP Perusahaan",
+    "field": "Bidang Usaha",
+    "fieldValue": "MICE, Konsultan, Media, Jasa Pengamanan"
+  }
+}

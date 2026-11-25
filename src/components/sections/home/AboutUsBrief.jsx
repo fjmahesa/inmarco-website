@@ -1,9 +1,12 @@
+import { useTranslation } from "react-i18next";
 import FadeInSection from "../../common/FadeInSection";
 
 // Import aset gambar lokal .webp dari src/assets/
 import aboutImg from "../../../assets/business-coach-005.webp";
 
 export default function AboutUsBrief() {
+  const { t } = useTranslation("homeHero");
+
   return (
     <section
       id="about"
@@ -22,17 +25,17 @@ export default function AboutUsBrief() {
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white">
                 <img
                   src={aboutImg}
-                  alt="PT Global Inmarco Sejahtera"
+                  alt={t("about.imageAlt")}
                   className="w-full h-[360px] sm:h-[420px] object-cover object-center transform hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy-950/70 via-transparent to-transparent" />
 
                 <div className="absolute bottom-5 left-5 right-5 text-white">
                   <p className="text-xs font-semibold text-sky-300 uppercase tracking-widest">
-                    Integrated Agency
+                    {t("about.imageCaption")}
                   </p>
                   <h4 className="text-lg font-black mt-0.5">
-                    PT. Global Inmarco Sejahtera
+                    {t("about.companyName")}
                   </h4>
                 </div>
               </div>
@@ -43,25 +46,22 @@ export default function AboutUsBrief() {
           <FadeInSection className="lg:col-span-7">
             <div className="space-y-6">
               <span className="text-xs font-extrabold uppercase tracking-widest text-blue-600 bg-blue-50 px-4 py-1.5 rounded-full border border-blue-200">
-                Tentang Kami
+                {t("about.badge")}
               </span>
 
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-navy-900 tracking-tight leading-tight">
-                Transformasi Menuju <br className="hidden sm:inline" />
+                {t("about.headingPrefix")} <br className="hidden sm:inline" />
                 <span className="text-blue-600">
-                  Solusi Terintegrasi & Adaptif
+                  {t("about.headingHighlight")}
                 </span>
               </h2>
 
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
-                Dimulai dari badan usaha berbentuk CV pada tahun 2011,
-                perusahaan kami berkembang pesat hingga resmi bertransformasi
-                menjadi{" "}
+                {t("about.storyBefore")}{" "}
                 <strong className="text-navy-900 font-semibold">
-                  PT. Global Inmarco Sejahtera
+                  {t("about.companyName")}
                 </strong>{" "}
-                pada 28 Mei 2024 guna menghadirkan ekosistem layanan
-                terintegrasi skala besar bagi pemerintah dan swasta.
+                {t("about.storyAfter")}
               </p>
 
               {/* KARTU VISI UTAMA */}
@@ -89,14 +89,12 @@ export default function AboutUsBrief() {
                     </svg>
                   </div>
                   <span className="text-xs font-bold uppercase tracking-wider text-blue-600">
-                    Visi Perusahaan
+                    {t("about.visionLabel")}
                   </span>
                 </div>
 
                 <p className="text-sm font-bold text-navy-900 italic leading-relaxed">
-                  "Menjadi perusahaan penyedia jasa dan solusi terintegrasi yang
-                  profesional, terpercaya, inovatif, dan berorientasi pada
-                  kualitas pelayanan serta kebutuhan klien."
+                  {t("about.visionQuote")}
                 </p>
               </div>
             </div>

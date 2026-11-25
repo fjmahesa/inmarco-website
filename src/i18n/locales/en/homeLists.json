@@ -1,0 +1,198 @@
+{
+  "services": {
+    "eyebrow": "Our Services",
+    "title": "Integrated Business Capabilities",
+    "description": "Comprehensive solutions to support your brand's growth, from planning through operations.",
+    "cta": "Consultation Now",
+    "cards": [
+      {
+        "title": "Visioning",
+        "subtitle": "Defining your brand's long-term direction and strategy."
+      },
+      {
+        "title": "Planning",
+        "subtitle": "Structured planning for digital campaign execution."
+      },
+      {
+        "title": "Research",
+        "subtitle": "In-depth market research and competitor analysis."
+      },
+      {
+        "title": "Networking",
+        "subtitle": "Building strategic partner and influencer ecosystem relationships."
+      },
+      {
+        "title": "Branding",
+        "subtitle": "Shaping visual identity and positive audience perception."
+      },
+      {
+        "title": "Marketing",
+        "subtitle": "Integrated marketing strategies to boost conversions."
+      },
+      {
+        "title": "Hiring",
+        "subtitle": "Talent development and human resources for marketing."
+      },
+      {
+        "title": "Operations",
+        "subtitle": "Operational management of events and campaigns."
+      }
+    ]
+  },
+  "projects": {
+    "eyebrow": "Our Services",
+    "title": "Integrated Solutions For",
+    "titleAccent": "Organizational Growth",
+    "description": "PT. Global Inmarco Sejahtera delivers a complete service ecosystem, from event management and digital communication to private security services.",
+    "prevPage": "Previous Page",
+    "nextPage": "Next Page",
+    "goToPage": "Go to page {{page}}",
+    "cardCta": "Consult This Service",
+    "cards": [
+      {
+        "title": "MICE & Event Management",
+        "subtitle": "Meeting, Incentive, Convention & Exhibition",
+        "description": "Professional event services covering concept development, production, on-site operations, hybrid live streaming, and post-event evaluation.",
+        "badge": "Core Service",
+        "features": [
+          "Meeting, Incentive, Convention & Exhibition",
+          "Live Streaming & Hybrid Events",
+          "Event Production & Management",
+          "Brand & Product Launching"
+        ]
+      },
+      {
+        "title": "Strategic Consulting",
+        "subtitle": "Business Consulting & Strategic Planning",
+        "description": "Strategic communication and business advisory for organizations, companies, and government institutions, grounded in research and data analysis.",
+        "badge": "Strategic Partner",
+        "features": [
+          "Business & Strategic Planning",
+          "Digital Consultancy",
+          "Media Monitoring & Social Listening",
+          "Branding Strategy & Positioning"
+        ]
+      },
+      {
+        "title": "Media & Digital Communication",
+        "subtitle": "Master Digital Media & Manage Public Perception",
+        "description": "Integrated digital communication management to build audience engagement, run digital campaigns, and strengthen personal branding.",
+        "badge": "Digital Growth",
+        "features": [
+          "Social Media Management & Marketing",
+          "Digital Campaign & Advertising",
+          "Personal Branding & Public Perception",
+          "Creative Content & Video Production"
+        ]
+      },
+      {
+        "title": "Private Security Services",
+        "subtitle": "Security Services, Assessment & Technology",
+        "description": "Professional security guards, security system specialists, and electronic detection-based room sweeping services.",
+        "badge": "Featured Unit",
+        "features": [
+          "Security Guard & Physical Facility Security Services",
+          "Expert Personnel & Security Risk Assessment",
+          "Electronic Detection-Based Room Sweeping",
+          "CCTV Integration & Security Monitoring Center"
+        ]
+      },
+      {
+        "title": "Education, Training & Tour",
+        "subtitle": "Human Resource Empowerment & Travel Services",
+        "description": "Digital literacy programs, MSME development, entrepreneurship training, and integrated travel packages.",
+        "badge": "Empowerment",
+        "features": [
+          "Digital Literacy & Content Creator Training",
+          "MSME Business Development & Branding",
+          "Workshop Vision & Goal Setting",
+          "Tour Packages & Travel Events"
+        ]
+      }
+    ]
+  },
+  "workflow": {
+    "eyebrow": "Work Process",
+    "title": "“Inmarco – Integrated Marketing Communication”",
+    "description": "A proven six-step methodology to help your brand move forward with confidence.",
+    "stepLabel": "Step",
+    "steps": [
+      {
+        "title": "We Meet You & Discus",
+        "tagline": "First Step",
+        "description": "In-depth meetings and discussions to map your expectations, needs, and primary brand objectives."
+      },
+      {
+        "title": "Understand Your Business Process",
+        "tagline": "Internal Analysis",
+        "description": "Understanding your operational workflows and the unique dynamics of your business ecosystem to design targeted solutions."
+      },
+      {
+        "title": "Data Gathering & Analysis",
+        "tagline": "Comprehensive Research",
+        "description": "Gathering real data on market conditions, competitors, and audience trends as the foundation of your strategy."
+      },
+      {
+        "title": "Campaign Ideas & Concept",
+        "tagline": "Idea Development",
+        "description": "Formulating creative concepts and key marketing communication messages with strong appeal."
+      },
+      {
+        "title": "Grow Your Business",
+        "tagline": "Strategic Execution",
+        "description": "Executing integrated campaigns across digital channels and events to accelerate business growth."
+      },
+      {
+        "title": "Welcome To Happy Client Club",
+        "tagline": "Sustainable Partnership",
+        "description": "Regular performance reviews and long-term support as your trusted business partner."
+      }
+    ]
+  },
+  "clients": {
+    "eyebrow": "Our Clients & Partners",
+    "title": "Government",
+    "description": "Trusted by various ministries, state agencies, and regional governments.",
+    "logos": [
+      { "name": "DPRD DKI Jakarta" },
+      { "name": "DPPBJ DKI Jakarta" },
+      { "name": "Kemkominfo / Komdigi" },
+      { "name": "Bank Indonesia" },
+      { "name": "Kemenko Perekonomian" },
+      { "name": "Dinas Perhubungan" },
+      { "name": "Badan Pusat Statistik" },
+      { "name": "BAKTI Kominfo" },
+      { "name": "Pos Indonesia" }
+    ]
+  },
+  "education": {
+    "eyebrow": "Academic Sector",
+    "title": "Education",
+    "description": "Strategic partnerships with universities and national higher education institutions.",
+    "logos": [
+      { "name": "Fakultas Psikologi Universitas Indonesia" },
+      { "name": "Sekolah Tinggi Sandi Negara (STSN)" }
+    ]
+  },
+  "corporate": {
+    "eyebrow": "Private Sector & BUMD",
+    "title": "Corporate",
+    "description": "Trusted by leading corporations, banking institutions, and regional-owned enterprises (BUMD).",
+    "logos": [
+      { "name": "Nusantara Infrastructure" },
+      { "name": "BII Maybank" },
+      { "name": "Orico Balimor Finance" }
+    ]
+  },
+  "regional": {
+    "eyebrow": "Regional Partnerships & BUMD",
+    "title": "Regional Governments & BUMD",
+    "description": "Building governance and operational security for city and regency governments as well as regional-owned enterprises (BUMD).",
+    "logos": [
+      { "name": "Pemerintah Kota Depok" },
+      { "name": "Pemerintah Kabupaten Cianjur" },
+      { "name": "Bank Sumsel Babel" },
+      { "name": "PDAM Tirta Bhagasasi" }
+    ]
+  }
+}

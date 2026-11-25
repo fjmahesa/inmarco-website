@@ -1,0 +1,39 @@
+{
+  "slides": [
+    {
+      "badge": "Integrated Solutions • Est. 2011",
+      "title": "PT. Global Inmarco Sejahtera",
+      "subtitle": "MICE, Media, Consulting & Security Services",
+      "description": "A trusted strategic partner with professional governance, delivering large-scale integrated services for government agencies and corporations."
+    },
+    {
+      "badge": "Integrated Solutions • Est. 2011",
+      "title": "Digital Communication",
+      "subtitle": "Master the Market & Build Lasting Engagement",
+      "description": "Professional MICE solutions, hybrid event management, measurable digital communication campaigns, and personal branding to strengthen your organization's image."
+    },
+    {
+      "badge": "Integrated Solutions • Est. 2011",
+      "title": "Private Security Services",
+      "subtitle": "Asset Protection, Disciplined Personnel & Detection Technology",
+      "description": "Professional security guards, Security Assessment experts, CCTV monitoring, and room sweeps using electronic detection (anti-bugging)."
+    }
+  ],
+  "controls": {
+    "goToSlide": "Go to slide {{index}}",
+    "previous": "Previous Slide",
+    "next": "Next Slide"
+  },
+  "about": {
+    "imageAlt": "PT Global Inmarco Sejahtera",
+    "imageCaption": "Integrated Agency",
+    "companyName": "PT. Global Inmarco Sejahtera",
+    "badge": "About Us",
+    "headingPrefix": "Transformation Towards",
+    "headingHighlight": "Integrated & Adaptive Solutions",
+    "storyBefore": "Starting as a CV in 2011, our company grew rapidly until it officially transformed into",
+    "storyAfter": "on 28 May 2024 to deliver a large-scale integrated service ecosystem for government and private sectors.",
+    "visionLabel": "Company Vision",
+    "visionQuote": "\"To become a professional, trusted, and innovative provider of integrated services and solutions, focused on service quality and client needs.\""
+  }
+}

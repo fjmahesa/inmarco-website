@@ -1,0 +1,132 @@
+{
+  "vision": {
+    "badge": "Visi & Misi Perusahaan",
+    "headingPrefix": "Our Core",
+    "headingHighlight": "Values & Vision",
+    "quote": "“Menjadi perusahaan penyedia jasa dan solusi terintegrasi yang profesional, terpercaya, inovatif, dan berorientasi pada kualitas pelayanan serta kebutuhan klien.”",
+    "cardFooter": "Pilar Nilai Utama"
+  },
+  "controls": {
+    "previous": "Previous Slide",
+    "next": "Next Slide"
+  },
+  "missionPillars": [
+    {
+      "title": "Kualitas & Integritas",
+      "subtitle": "Pilar 01",
+      "description": "Memberikan layanan profesional dan kepuasan klien secara konsisten."
+    },
+    {
+      "title": "Solusi Kreatif",
+      "subtitle": "Pilar 02",
+      "description": "Mengembangkan inovasi sesuai kebutuhan instansi pemerintah dan perusahaan."
+    },
+    {
+      "title": "Integrasi",
+      "subtitle": "Pilar 03",
+      "description": "Memadukan SDM, teknologi, komunikasi, dan manajemen secara terpadu."
+    },
+    {
+      "title": "Kemitraan",
+      "subtitle": "Pilar 04",
+      "description": "Membangun relasi jangka panjang yang saling percaya dengan pemangku kepentingan."
+    },
+    {
+      "title": "SDM Unggul",
+      "subtitle": "Pilar 05",
+      "description": "Mengembangkan SDM yang kompeten, disiplin, profesional, dan bertanggung jawab."
+    }
+  ],
+  "business": {
+    "badge": "Core Business Pillars",
+    "headingPrefix": "Bidang",
+    "headingHighlight": "USAHA",
+    "description": "Empat pilar utama layanan PT. Global Inmarco Sejahtera yang saling terintegrasi untuk mendukung pertumbuhan instansi dan perusahaan Anda."
+  },
+  "businessPillars": [
+    {
+      "title": "MICE & Event Organizer",
+      "subtitle": "Meeting, Incentive, Convention, Exhibition",
+      "description": "Pengelolaan acara strategis, konvensi, ekshibisi, hingga produksi event hybrid & live streaming terintegrasi."
+    },
+    {
+      "title": "Konsultan Strategis",
+      "subtitle": "Pendampingan Strategis & Komunikasi",
+      "description": "Perancangan strategi bisnis, komunikasi publik, branding positioning, hingga media monitoring terukur."
+    },
+    {
+      "title": "Media & Digital Ecosystem",
+      "subtitle": "Digital Ecosystem & Manajemen Komunikasi",
+      "description": "Pengelolaan media sosial, kampanye digital, personal branding, hingga produksi konten kreatif visual."
+    },
+    {
+      "title": "Jasa Pengamanan Swasta",
+      "subtitle": "Perlindungan Aset, SDM, & Teknologi",
+      "description": "Penyediaan Satpam profesional, security assessment, CCTV monitoring, hingga sweep deteksi elektronik."
+    }
+  ],
+  "mice": {
+    "imageAlt": "Suasana Ruang MICE",
+    "badge": "Event & Organizer",
+    "headingPrefix": "Layanan",
+    "headingAcronym": "MICE",
+    "headingSuffix": "Profesional",
+    "description": "Menyediakan layanan komprehensif untuk kebutuhan pemerintah, perusahaan, organisasi, maupun institusi.",
+    "footer": "Integrated Event Solutions"
+  },
+  "miceItems": [
+    {
+      "letter": "M",
+      "title": "Meeting",
+      "description": "Pengelolaan rapat strategis."
+    },
+    {
+      "letter": "I",
+      "title": "Incentive",
+      "description": "Program insentif perusahaan."
+    },
+    {
+      "letter": "C",
+      "title": "Convention",
+      "description": "Konvensi skala besar."
+    },
+    {
+      "letter": "E",
+      "title": "Exhibition",
+      "description": "Pameran dan eksibisi."
+    }
+  ],
+  "consulting": {
+    "badge": "Strategic Consulting",
+    "headingPrefix": "Pendampingan & Strategi",
+    "headingHighlight": "Konsultan",
+    "description": "Dukungan penuh bagi organisasi dan lembaga pemerintah dalam merancang strategi komunikasi yang terukur dan berdampak.",
+    "coreFocus": "Core Focus",
+    "centerTitlePrefix": "Solusi",
+    "centerTitleSuffix": "Strategis",
+    "coreHub": "Core Hub",
+    "centerTitleMobile": "Solusi Strategis"
+  },
+  "consultingServices": {
+    "left": [
+      {
+        "title": "Business Consulting",
+        "description": "Pengembangan strategi bisnis dan organisasi."
+      },
+      {
+        "title": "Social Media Strategy",
+        "description": "Pemetaan dan taktik media sosial."
+      }
+    ],
+    "right": [
+      {
+        "title": "Digital Communication",
+        "description": "Arsitektur komunikasi era digital."
+      },
+      {
+        "title": "Branding",
+        "description": "Penguatan identitas dan citra lembaga."
+      }
+    ]
+  }
+}

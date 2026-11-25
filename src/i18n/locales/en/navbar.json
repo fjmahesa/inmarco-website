@@ -1,0 +1,15 @@
+{
+  "brand": {
+    "alt": "INMARCO.ID"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "client": "Our Client",
+    "contact": "Contact Us"
+  },
+  "mobile": {
+    "menu": "Toggle Menu"
+  }
+}

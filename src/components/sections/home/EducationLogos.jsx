@@ -1,14 +1,20 @@
+import { useTranslation } from "react-i18next";
 import FadeInSection from "../../common/FadeInSection";
 
-const educationLogos = [
-  { name: "Fakultas Psikologi Universitas Indonesia", src: "/uipsikolog.webp" },
-  {
-    name: "Sekolah Tinggi Sandi Negara (STSN)",
-    src: "/sekolahtinggisandinegara.webp",
-  },
-];
-
 export default function EducationLogos() {
+  const { t } = useTranslation("homeLists");
+
+  const educationLogos = [
+    {
+      name: t("education.logos.0.name"),
+      src: "/uipsikolog.webp",
+    },
+    {
+      name: t("education.logos.1.name"),
+      src: "/sekolahtinggisandinegara.webp",
+    },
+  ];
+
   // Duplikasi logo khusus untuk animasi slider di tampilan mobile
   const duplicatedLogosMobile = [
     ...educationLogos,
@@ -22,14 +28,13 @@ export default function EducationLogos() {
         {/* Header Section */}
         <FadeInSection className="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
           <span className="text-xs font-extrabold uppercase tracking-widest text-blue-600 bg-blue-50 px-4 py-1.5 rounded-full border border-blue-100">
-            Sektor Akademik
+            {t("education.eyebrow")}
           </span>
           <h2 className="mt-4 text-3xl sm:text-5xl font-black text-navy-900 tracking-tight">
-            Pendidikan
+            {t("education.title")}
           </h2>
           <p className="mt-3 text-xs sm:text-base text-slate-600 font-medium">
-            Kemitraan strategis bersama perguruan tinggi dan institusi
-            pendidikan tinggi nasional.
+            {t("education.description")}
           </p>
         </FadeInSection>
 

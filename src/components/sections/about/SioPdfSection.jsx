@@ -1,6 +1,10 @@
+import { useTranslation } from "react-i18next";
+
 import FadeInSection from "../../common/FadeInSection";
 
 export default function SioPdfSection() {
+  const { t } = useTranslation("about");
+
   // URL file PDF dari Media Library WordPress admin.inmarco.id
   const pdfUrl =
     "https://admin.inmarco.id/wp-content/uploads/2026/10/SIO-PT-GIS.pdf";
@@ -12,14 +16,13 @@ export default function SioPdfSection() {
           {/* Header Judul Section */}
           <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12 space-y-3">
             <span className="text-[10px] font-extrabold uppercase tracking-widest text-sky-600 bg-sky-50 px-3.5 py-1.5 rounded-full border border-sky-100">
-              Leglegalitas & Perizinan
+              {t("sio.badge")}
             </span>
             <h2 className="text-2xl sm:text-4xl font-black text-navy-900 tracking-tight leading-snug">
-              Surat Izin Operasional Bidang Usaha Jasa Pengamanan
+              {t("sio.title")}
             </h2>
             <p className="text-xs sm:text-base text-slate-600 leading-relaxed">
-              Dokumen resmi perizinan operasional jasa pengamanan PT Global
-              Inmarco Sejahtera yang telah terverifikasi.
+              {t("sio.description")}
             </p>
           </div>
 
@@ -47,7 +50,7 @@ export default function SioPdfSection() {
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto text-center px-4 py-2 text-xs font-extrabold text-white bg-sky-600 hover:bg-sky-500 rounded-xl transition-all shadow-sm active:scale-95"
               >
-                Unduh / Buka Dokumen
+                {t("sio.downloadButton")}
               </a>
             </div>
 
@@ -61,8 +64,7 @@ export default function SioPdfSection() {
                 {/* Fallback Tampilan Mobile atau Browser Tanpa Support Viewer PDF */}
                 <div className="flex flex-col items-center justify-center h-full p-6 text-center space-y-4 bg-slate-50">
                   <p className="text-xs sm:text-sm text-slate-600 max-w-md">
-                    Pratinjau langsung dokumen PDF tidak didukung oleh browser
-                    Anda.
+                    {t("sio.previewUnsupported")}
                   </p>
                   <a
                     href={pdfUrl}
@@ -70,7 +72,7 @@ export default function SioPdfSection() {
                     rel="noopener noreferrer"
                     className="px-6 py-3 text-xs font-bold text-white bg-navy-900 hover:bg-navy-800 rounded-xl shadow-md transition-all"
                   >
-                    Klik untuk Membuka Dokumen SIO
+                    {t("sio.openButton")}
                   </a>
                 </div>
               </object>

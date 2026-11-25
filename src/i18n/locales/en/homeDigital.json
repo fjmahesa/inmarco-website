@@ -1,0 +1,179 @@
+{
+  "digital": {
+    "badge": "Integrated Media Ecosystem",
+    "titleLead": "Digital Communication",
+    "titleAccent": "Ecosystem",
+    "description": "Building consistent, measurable communication amid the ever-changing dynamics of the digital landscape.",
+    "alt": "Digital Communication Ecosystem",
+    "infrastructure": "360° Digital Infrastructure",
+    "items": [
+      {
+        "title": "Social Media Management",
+        "desc": "Planned and consistent management of social media accounts."
+      },
+      {
+        "title": "Social Media Marketing",
+        "desc": "Creative content-driven marketing to engage audiences."
+      },
+      {
+        "title": "Digital Advertising",
+        "desc": "Measurable paid advertising on Meta, Google, & TikTok Ads."
+      },
+      {
+        "title": "Social Media Monitoring",
+        "desc": "Analysis of public perception & real-time audience response."
+      },
+      {
+        "title": "Personal Branding",
+        "desc": "Strengthening the reputation of leaders, professionals, and public figures."
+      },
+      {
+        "title": "Digital Campaign",
+        "desc": "Strategic digital campaigns from planning through activation."
+      },
+      {
+        "title": "Creative & Content Creator",
+        "desc": "High-value visual production, copywriting, and creative video."
+      },
+      {
+        "title": "Digital Communication Strategy",
+        "desc": "Comprehensive communication architecture for the digital transformation era."
+      }
+    ],
+    "page": "Page {{current}} of {{total}}",
+    "goToSlide": "Go to slide {{slide}}",
+    "previous": "Previous Page",
+    "next": "Next Page"
+  },
+  "security": {
+    "hero": {
+      "badge": "Security Unit",
+      "titleLead": "Private Security",
+      "titleAccent": "Services",
+      "alt": "Private Security Services",
+      "pillar1": "Professionalism",
+      "pillar2": "Discipline",
+      "pillar3": "Technology Implementation",
+      "coverageLabel": "Facility & Service Area Coverage:",
+      "coverage": [
+        "Government Agencies & Official Residences",
+        "Commercial Areas & Corporate Properties",
+        "Activities & Events (Integrated MICE)",
+        "Public Areas & Facilities",
+        "Offices & Buildings"
+      ]
+    },
+    "human": {
+      "badge": "Human & Operational Strategy",
+      "titleLead": "Security Grounded in",
+      "titleAccent": "People & Strategy",
+      "items": [
+        {
+          "title": "Frontline Security Guards (Satpam)",
+          "subtitle": "Provision of professional security personnel.",
+          "details": "Access control, environmental surveillance, area patrols, visitor management, initial incident response, and incident reporting."
+        },
+        {
+          "title": "Strategy & Systems (Experts)",
+          "subtitle": "Design of organizational security systems.",
+          "details": "Security assessment, SOP development, risk analysis, operational evaluation, and technology-based security pattern development."
+        }
+      ],
+      "includes": "Including:",
+      "certification": "Qualification Certification",
+      "serviceScope": "Field Services & System Assessment"
+    },
+    "tech": {
+      "badge": "Advanced Surveillance & Sweep",
+      "titleLead": "Technology- & Detection-Based",
+      "titleAccent": "Security",
+      "items": [
+        {
+          "title": "Electronic Detection (Security Sweep)",
+          "details": "Inspection and clearing of workspaces, meeting rooms, and executive areas of any unauthorized electronic devices. Enhancing information security in high-sensitivity areas.",
+          "badge": "Sweep Technology"
+        },
+        {
+          "title": "CCTV & Monitoring Center",
+          "details": "Installation, area monitoring, access control, and monitoring system integration to complement human-resource-based security.",
+          "badge": "Surveillance System"
+        }
+      ],
+      "footerLeft": "High Sensitivity Protection",
+      "footerRight": "Electronic Security Feature"
+    }
+  },
+  "matrix": {
+    "badge": "Security Services Unit",
+    "titleLead": "Security Through Technology and",
+    "titleAccent": "Detection",
+    "description": "Seamless integration of workforce discipline, expert system design, and advanced electronic detection technology to protect your agency's vital assets.",
+    "alt": "Security Services Background",
+    "features": [
+      {
+        "category": "Preventive & Strategy",
+        "title": "Security Assessment Experts",
+        "description": "Design of security systems, security risk analysis, operational evaluation, and preparation of agency security SOPs.",
+        "badge": "Human x Preventive"
+      },
+      {
+        "category": "Field Services",
+        "title": "Professional Satpam Services",
+        "description": "Provision of disciplined Satpam personnel for access control, area patrols, visitor supervision, and initial incident response.",
+        "badge": "Human x Active"
+      },
+      {
+        "category": "Technology-Based Special Feature",
+        "title": "Electronic Inspection & Detection",
+        "description": "Sweeping (Security Sweep) of workspaces, meeting rooms, and executive areas of any unauthorized electronic or surveillance devices.",
+        "badge": "Technology x Preventive"
+      },
+      {
+        "category": "Monitoring Systems",
+        "title": "CCTV & Monitoring Center Integration",
+        "description": "Installation, area access monitoring, and monitoring system integration to complement human-based security.",
+        "badge": "Technology x Active"
+      }
+    ],
+    "banner": {
+      "title": "Security Facility & Area Coverage",
+      "description": "Services are designed to support government agencies, offices, official residences, banking, commercial areas, and national-scale MICE events.",
+      "cta": "Consult a Security System"
+    }
+  },
+  "highlight": {
+    "badge": "Security Services Highlight",
+    "titleLead": "Integrated Security Matrix",
+    "titleAccent": "360°",
+    "description": "A modern security system combining the expertise of professional personnel, risk analysis, and the latest electronic detection technology[cite: 15, 18].",
+    "cite18": "[cite: 18]",
+    "cite16_18": "[cite: 16, 18]",
+    "cite17_18": "[cite: 17, 18]",
+    "boxes": [
+      {
+        "number": "01",
+        "tag": "Human • Preventive",
+        "title": "Security Experts",
+        "description": "Security assessment, development of security SOPs, security risk analysis, and design of technology-based security patterns[cite: 16, 18]."
+      },
+      {
+        "number": "02",
+        "tag": "Human • Active",
+        "title": "Frontline Security Guards (Satpam)",
+        "description": "Provision of professional Satpam for access control, environmental supervision, area patrols, visitor management, and incident reporting[cite: 16, 18]."
+      },
+      {
+        "tag": "Technology • Preventive",
+        "featured": "Featured",
+        "title": "Electronic Detection (Security Sweep)",
+        "description": "Inspection and clearing of workspaces, meeting rooms, and executive areas of any unauthorized electronic devices to safeguard information confidentiality[cite: 17]."
+      },
+      {
+        "number": "04",
+        "tag": "Technology • Active",
+        "title": "CCTV & Monitoring Center",
+        "description": "Installation, real-time area monitoring, access control, and monitoring center integration to complement physical security personnel[cite: 17, 18]."
+      }
+    ]
+  }
+}

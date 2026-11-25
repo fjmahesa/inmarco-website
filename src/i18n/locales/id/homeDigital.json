@@ -1,0 +1,179 @@
+{
+  "digital": {
+    "badge": "Integrated Media Ecosystem",
+    "titleLead": "Ekosistem Komunikasi",
+    "titleAccent": "Digital",
+    "description": "Membangun komunikasi yang konsisten dan terukur di tengah dinamika perkembangan lanskap digital.",
+    "alt": "Ekosistem Komunikasi Digital",
+    "infrastructure": "360° Digital Infrastructure",
+    "items": [
+      {
+        "title": "Social Media Management",
+        "desc": "Pengelolaan akun media sosial terencana & konsisten."
+      },
+      {
+        "title": "Social Media Marketing",
+        "desc": "Pemasaran berbasis konten kreatif untuk menggaet audiens."
+      },
+      {
+        "title": "Digital Advertising",
+        "desc": "Iklan berbayar terukur di Meta, Google, & TikTok Ads."
+      },
+      {
+        "title": "Social Media Monitoring",
+        "desc": "Analisis persepsi publik & respons audiens real-time."
+      },
+      {
+        "title": "Personal Branding",
+        "desc": "Penguatan reputasi pimpinan, profesional, & figur publik."
+      },
+      {
+        "title": "Digital Campaign",
+        "desc": "Kampanye digital strategis dari perancangan hingga aktivasi."
+      },
+      {
+        "title": "Creative & Content Creator",
+        "desc": "Produksi visual, copywriting, dan video kreatif bernilai tinggi."
+      },
+      {
+        "title": "Digital Communication Strategy",
+        "desc": "Arsitektur komunikasi komprehensif era transformasi digital."
+      }
+    ],
+    "page": "Halaman {{current}} dari {{total}}",
+    "goToSlide": "Go to slide {{slide}}",
+    "previous": "Previous Page",
+    "next": "Next Page"
+  },
+  "security": {
+    "hero": {
+      "badge": "Security Unit",
+      "titleLead": "Jasa Pengamanan",
+      "titleAccent": "Swasta",
+      "alt": "Jasa Pengamanan Swasta",
+      "pillar1": "Profesionalisme",
+      "pillar2": "Disiplin",
+      "pillar3": "Implementasi Teknologi",
+      "coverageLabel": "Cakupan Fasilitas & Area Layanan:",
+      "coverage": [
+        "Instansi Pemerintah & Rumah Dinas",
+        "Area Komersial & Properti Perusahaan",
+        "Kegiatan & Event (MICE Terintegrasi)",
+        "Kawasan & Fasilitas Publik",
+        "Perkantoran & Gedung"
+      ]
+    },
+    "human": {
+      "badge": "Human & Operational Strategy",
+      "titleLead": "Pengamanan Berbasis",
+      "titleAccent": "Manusia & Strategi",
+      "items": [
+        {
+          "title": "Garda Depan (Satpam)",
+          "subtitle": "Penyediaan tenaga pengamanan profesional.",
+          "details": "Penjagaan akses, pengawasan lingkungan, patroli area, pengendalian pengunjung, penanganan situasi awal, dan pelaporan kejadian."
+        },
+        {
+          "title": "Strategi & Sistem (Tenaga Ahli)",
+          "subtitle": "Perancangan sistem pengamanan organisasi.",
+          "details": "Security assessment, penyusunan SOP, analisis risiko, evaluasi operasional, dan pengembangan pola keamanan berbasis teknologi."
+        }
+      ],
+      "includes": "Meliputi:",
+      "certification": "Sertifikasi Kualifikasi",
+      "serviceScope": "Layanan Lapangan & System Assessment"
+    },
+    "tech": {
+      "badge": "Advanced Surveillance & Sweep",
+      "titleLead": "Keamanan Berbasis",
+      "titleAccent": "Teknologi & Deteksi",
+      "items": [
+        {
+          "title": "Deteksi Elektronik (Security Sweep)",
+          "details": "Pemeriksaan dan pembersihan ruang kerja, rapat, dan pimpinan dari potensi perangkat elektronik yang tidak semestinya. Meningkatkan keamanan informasi pada area bersensitivitas tinggi.",
+          "badge": "Teknologi Sweep"
+        },
+        {
+          "title": "CCTV & Monitoring Center",
+          "details": "Instalasi, pemantauan area, pengawasan akses, dan integrasi sistem monitoring untuk melengkapi pengamanan berbasis sumber daya manusia.",
+          "badge": "Surveillance System"
+        }
+      ],
+      "footerLeft": "High Sensitivity Protection",
+      "footerRight": "Electronic Security Feature"
+    }
+  },
+  "matrix": {
+    "badge": "Security Services Unit",
+    "titleLead": "Keamanan Berbasis Teknologi dan",
+    "titleAccent": "Deteksi",
+    "description": "Integrasi sempurna antara kedisiplinan sumber daya manusia, perancangan sistem tenaga ahli, dan teknologi deteksi elektronik mutakhir untuk perlindungan aset vital instansi Anda.",
+    "alt": "Security Services Background",
+    "features": [
+      {
+        "category": "Preventif & Strategi",
+        "title": "Tenaga Ahli Security Assessment",
+        "description": "Perancangan sistem pengamanan, analisis risiko keamanan, evaluasi operasional, dan penyusunan SOP pengamanan instansi.",
+        "badge": "Manusia x Preventif"
+      },
+      {
+        "category": "Layanan Lapangan",
+        "title": "Jasa Satpam Profesional",
+        "description": "Penyediaan personel Satpam disiplin untuk penjagaan akses, patroli area, pengawasan pengunjung, dan penanganan situasi awal.",
+        "badge": "Manusia x Aktif"
+      },
+      {
+        "category": "Fitur Khusus Berbasis Teknologi",
+        "title": "Pemeriksaan & Deteksi Elektronik",
+        "description": "Pembersihan (Security Sweep) ruang kerja, ruang rapat, dan pimpinan dari potensi perangkat elektronik/penyadap yang tidak semestinya.",
+        "badge": "Teknologi x Preventif"
+      },
+      {
+        "category": "Sistem Pemantauan",
+        "title": "Integrasi CCTV & Monitoring Center",
+        "description": "Instalasi, pemantauan akses area, dan integrasi sistem monitoring untuk melengkapi pengamanan berbasis sumber daya manusia.",
+        "badge": "Teknologi x Aktif"
+      }
+    ],
+    "banner": {
+      "title": "Cakupan Fasilitas & Area Pengamanan",
+      "description": "Layanan dirancang mendukung Instansi Pemerintah, Perkantoran, Rumah Dinas, Perbankan, Area Komersial, hingga Event MICE skala nasional.",
+      "cta": "Konsultasi Sistem Keamanan"
+    }
+  },
+  "highlight": {
+    "badge": "Security Services Highlight",
+    "titleLead": "Matriks Keamanan Terpadu",
+    "titleAccent": "360°",
+    "description": "Sistem pengamanan modern yang memadukan keahlian personil profesional, analisis risiko, serta teknologi deteksi elektronik terkini[cite: 15, 18].",
+    "cite18": "[cite: 18]",
+    "cite16_18": "[cite: 16, 18]",
+    "cite17_18": "[cite: 17, 18]",
+    "boxes": [
+      {
+        "number": "01",
+        "tag": "Manusia • Preventif",
+        "title": "Tenaga Ahli Pengamanan",
+        "description": "Security Assessment, penyusunan SOP pengamanan, analisis risiko keamanan, serta perancangan pola keamanan berbasis teknologi[cite: 16, 18]."
+      },
+      {
+        "number": "02",
+        "tag": "Manusia • Aktif",
+        "title": "Garda Depan (Satpam)",
+        "description": "Penyediaan Satpam profesional untuk penjagaan akses masuk, pengawasan lingkungan, patroli area, pengendalian pengunjung, dan pelaporan kejadian[cite: 16, 18]."
+      },
+      {
+        "tag": "Teknologi • Preventif",
+        "featured": "Featured",
+        "title": "Deteksi Elektronik (Security Sweep)",
+        "description": "Pemeriksaan dan pembersihan ruang kerja, rapat, dan pimpinan dari potensi perangkat elektronik yang tidak semestinya untuk menjaga kerahasiaan informasi[cite: 17]."
+      },
+      {
+        "number": "04",
+        "tag": "Teknologi • Aktif",
+        "title": "CCTV & Monitoring Center",
+        "description": "Instalasi, pemantauan area secara real-time, pengawasan akses, dan integrasi pusat kendali monitoring untuk melengkapi personil pengamanan fisik[cite: 17, 18]."
+      }
+    ]
+  }
+}

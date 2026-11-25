@@ -1,7 +1,10 @@
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import FadeInSection from "../components/common/FadeInSection";
 
 export default function NotFoundPage() {
+  const { t } = useTranslation("otherPages");
+
   return (
     <main className="min-h-screen bg-navy-950 mt-5 sm:mt-10 text-slate-100 flex items-center justify-center relative overflow-hidden px-5 sm:px-6 lg:px-8 py-20">
       {/* Background Ambient Glow */}
@@ -14,7 +17,7 @@ export default function NotFoundPage() {
             {/* Badge Indicator */}
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-sky-500/10 border border-sky-400/20 text-sky-300 text-xs font-extrabold uppercase tracking-widest backdrop-blur-md">
               <span className="w-2 h-2 rounded-full bg-sky-400 animate-ping" />
-              Error 404 • Page Not Found
+              {t("notFound.badge")}
             </div>
 
             {/* Typography 404 */}
@@ -25,12 +28,10 @@ export default function NotFoundPage() {
             {/* Subtitle & Description */}
             <div className="space-y-2">
               <h2 className="text-xl sm:text-2xl font-bold text-white">
-                Halaman Tidak Ditemukan
+                {t("notFound.title")}
               </h2>
               <p className="text-xs sm:text-sm text-slate-400 leading-relaxed max-w-md mx-auto">
-                Tautan yang Anda tuju mungkin telah dipindahkan, dihapus, atau
-                tidak pernah ada. Mari kembali ke halaman utama untuk menemukan
-                informasi yang Anda butuhkan.
+                {t("notFound.description")}
               </p>
             </div>
 
@@ -40,13 +41,13 @@ export default function NotFoundPage() {
                 to="/"
                 className="w-full sm:w-auto px-7 py-3.5 text-xs font-extrabold text-navy-950 bg-sky-400 hover:bg-sky-300 rounded-xl shadow-lg shadow-sky-400/20 transition-all transform hover:-translate-y-0.5 active:translate-y-0"
               >
-                Kembali ke Beranda
+                {t("notFound.homeButton")}
               </Link>
               <button
                 onClick={() => window.history.back()}
                 className="w-full sm:w-auto px-7 py-3.5 text-xs font-bold text-slate-300 hover:text-white bg-navy-900/80 hover:bg-navy-900 border border-slate-800 rounded-xl transition-all"
               >
-                Kembali ke Halaman Sebelumnya
+                {t("notFound.backButton")}
               </button>
             </div>
           </div>

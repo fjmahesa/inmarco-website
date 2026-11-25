@@ -1,0 +1,14 @@
+{
+  "notFound": {
+    "badge": "Error 404 • Page Not Found",
+    "title": "Page Not Found",
+    "description": "The link you followed may have been moved, deleted, or never existed. Let's return to the homepage to find the information you need.",
+    "homeButton": "Back to Home",
+    "backButton": "Go Back to Previous Page"
+  },
+  "gallery": {
+    "badge": "Gallery & Documentation",
+    "title": "Latest Activities & Portfolio",
+    "iframeTitle": "INMARCO Documentation Gallery"
+  }
+}

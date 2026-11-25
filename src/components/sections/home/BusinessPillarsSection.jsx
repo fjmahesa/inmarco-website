@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import FadeInSection from "../../common/FadeInSection";
 
 // Impor file gambar lokal untuk masing-masing pilar (sesuaikan path gambar di project kamu)
@@ -6,50 +7,48 @@ import imgKonsultan from "../../../assets/business-coach-002.webp";
 import imgMedia from "../../../assets/mediasocial.webp";
 import imgSecurity from "../../../assets/business-coach-004.webp";
 
-const businessPillars = [
-  {
-    id: "mice",
-    title: "MICE & Event Organizer",
-    subtitle: "Meeting, Incentive, Convention, Exhibition",
-    description:
-      "Pengelolaan acara strategis, konvensi, ekshibisi, hingga produksi event hybrid & live streaming terintegrasi.",
-    image: imgMice,
-    accentColor: "from-orange-500 to-amber-500",
-    badgeColor: "bg-orange-50 text-orange-600 border-orange-200",
-  },
-  {
-    id: "konsultan",
-    title: "Konsultan Strategis",
-    subtitle: "Pendampingan Strategis & Komunikasi",
-    description:
-      "Perancangan strategi bisnis, komunikasi publik, branding positioning, hingga media monitoring terukur.",
-    image: imgKonsultan,
-    accentColor: "from-teal-500 to-emerald-500",
-    badgeColor: "bg-teal-50 text-teal-600 border-teal-200",
-  },
-  {
-    id: "media",
-    title: "Media & Digital Ecosystem",
-    subtitle: "Digital Ecosystem & Manajemen Komunikasi",
-    description:
-      "Pengelolaan media sosial, kampanye digital, personal branding, hingga produksi konten kreatif visual.",
-    image: imgMedia,
-    accentColor: "from-purple-500 to-indigo-500",
-    badgeColor: "bg-purple-50 text-purple-600 border-purple-200",
-  },
-  {
-    id: "security",
-    title: "Jasa Pengamanan Swasta",
-    subtitle: "Perlindungan Aset, SDM, & Teknologi",
-    description:
-      "Penyediaan Satpam profesional, security assessment, CCTV monitoring, hingga sweep deteksi elektronik.",
-    image: imgSecurity,
-    accentColor: "from-blue-600 to-sky-500",
-    badgeColor: "bg-blue-50 text-blue-600 border-blue-200",
-  },
-];
-
 export default function BusinessPillarsSection() {
+  const { t } = useTranslation("homeVision");
+
+  const businessPillars = [
+    {
+      id: "mice",
+      title: t("businessPillars.0.title"),
+      subtitle: t("businessPillars.0.subtitle"),
+      description: t("businessPillars.0.description"),
+      image: imgMice,
+      accentColor: "from-orange-500 to-amber-500",
+      badgeColor: "bg-orange-50 text-orange-600 border-orange-200",
+    },
+    {
+      id: "konsultan",
+      title: t("businessPillars.1.title"),
+      subtitle: t("businessPillars.1.subtitle"),
+      description: t("businessPillars.1.description"),
+      image: imgKonsultan,
+      accentColor: "from-teal-500 to-emerald-500",
+      badgeColor: "bg-teal-50 text-teal-600 border-teal-200",
+    },
+    {
+      id: "media",
+      title: t("businessPillars.2.title"),
+      subtitle: t("businessPillars.2.subtitle"),
+      description: t("businessPillars.2.description"),
+      image: imgMedia,
+      accentColor: "from-purple-500 to-indigo-500",
+      badgeColor: "bg-purple-50 text-purple-600 border-purple-200",
+    },
+    {
+      id: "security",
+      title: t("businessPillars.3.title"),
+      subtitle: t("businessPillars.3.subtitle"),
+      description: t("businessPillars.3.description"),
+      image: imgSecurity,
+      accentColor: "from-blue-600 to-sky-500",
+      badgeColor: "bg-blue-50 text-blue-600 border-blue-200",
+    },
+  ];
+
   return (
     <section
       id="bidang-usaha"
@@ -63,15 +62,16 @@ export default function BusinessPillarsSection() {
         <FadeInSection>
           <div className="text-center max-w-2xl mx-auto space-y-3 mb-12 sm:mb-16">
             <span className="text-xs font-extrabold uppercase tracking-widest text-sky-600 bg-sky-50 px-4 py-1.5 rounded-full border border-sky-200">
-              Core Business Pillars
+              {t("business.badge")}
             </span>
             <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-navy-900 leading-tight">
-              Bidang <span className="text-sky-600">USAHA</span>
+              {t("business.headingPrefix")}{" "}
+              <span className="text-sky-600">
+                {t("business.headingHighlight")}
+              </span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
-              Empat pilar utama layanan PT. Global Inmarco Sejahtera yang saling
-              terintegrasi untuk mendukung pertumbuhan instansi dan perusahaan
-              Anda.
+              {t("business.description")}
             </p>
           </div>
         </FadeInSection>

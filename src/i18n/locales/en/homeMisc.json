@@ -1,0 +1,170 @@
+{
+  "work": {
+    "badge": "Work Methodology",
+    "titleLead": "Integrated Work",
+    "titleAccent": "Approach",
+    "description": "A structured 6-step methodology from PT. Global Inmarco Sejahtera to ensure every project is measurable, professional, and delivers real impact.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "UNDERSTAND",
+        "subtitle": "Understanding Needs",
+        "description": "Exploring the needs, goals, challenges, and unique characteristics of your organization or company."
+      },
+      {
+        "number": "02",
+        "title": "ANALYZE",
+        "subtitle": "Data Analysis",
+        "description": "Gathering information and analyzing relevant data in depth to establish the foundation of the strategy."
+      },
+      {
+        "number": "03",
+        "title": "STRATEGIZE",
+        "subtitle": "Concept Planning",
+        "description": "Formulating measurable strategies, communication architecture, and innovative campaign and execution ideas."
+      },
+      {
+        "number": "04",
+        "title": "EXECUTE",
+        "subtitle": "Program Execution",
+        "description": "Executing programs with precision, backed by experienced personnel and integrated technology."
+      },
+      {
+        "number": "05",
+        "title": "MONITOR",
+        "subtitle": "Quality Supervision",
+        "description": "Conducting regular supervision throughout implementation to ensure service quality stays optimal."
+      },
+      {
+        "number": "06",
+        "title": "EVALUATE",
+        "subtitle": "Evaluation & Recommendations",
+        "description": "Comprehensive evaluation and strategic recommendations for sustainable business development."
+      }
+    ],
+    "stepProgress": "Step {{step}} of 6"
+  },
+  "trust": {
+    "badge": "Proven Track Record",
+    "titleLead": "Track",
+    "titleAccent": "Record of Trust",
+    "description": "Long-term trust from government institutions and national-scale companies.",
+    "alt": "Urban Buildings",
+    "items": [
+      {
+        "title": "Pemerintah Provinsi DKI Jakarta (Kantor Gubernur)",
+        "description": "Security services for government office environments.",
+        "badge": "Government Sector"
+      },
+      {
+        "title": "Pemerintah Provinsi DKI Jakarta (Badan Pengadaan Barang/Jasa)",
+        "description": "Operational security for the working environment.",
+        "badge": "Government Sector"
+      },
+      {
+        "title": "DPRD Provinsi DKI Jakarta",
+        "description": "Security for official residences and executive offices.",
+        "badge": "Public Institution"
+      },
+      {
+        "title": "PT Insight Investment Management Jakarta",
+        "description": "Corporate operational security support.",
+        "badge": "Corporate Sector"
+      }
+    ]
+  },
+  "commitment": {
+    "badge": "Core Principles",
+    "titleLead": "Sustainable",
+    "titleAccent": "Commitment",
+    "alt": "Team Discussion Setting",
+    "pillars": [
+      {
+        "full": "Professionalism & Integrity",
+        "line1": "Professionalism",
+        "line2": "& Integrity"
+      },
+      {
+        "full": "Timeliness & Communication",
+        "line1": "Timeliness &",
+        "line2": "Communication"
+      },
+      {
+        "full": "Client Needs Orientation",
+        "line1": "Client Needs",
+        "line2": "Orientation"
+      }
+    ],
+    "statement": "We believe success is determined not only by task execution, but by the capacity to be an adaptive and reliable strategic partner."
+  },
+  "instagram": {
+    "badge": "Social Media",
+    "title": "Follow Us on Instagram",
+    "description": "Visit our official Instagram profile",
+    "handle": "@inmarco.indonesia",
+    "alt": "INMARCO Logo",
+    "follow": "Follow on Instagram",
+    "frameTitle": "Instagram Feed INMARCO"
+  },
+  "preview": {
+    "badge": "Security Services Unit",
+    "titleLead": "Integrated Security Matrix",
+    "titleAccent": "360°",
+    "description": "Seamless integration of human discipline, expert-designed systems, and cutting-edge electronic detection technology to protect your agency's vital assets.",
+    "features": [
+      {
+        "category": "Prevention & Strategy",
+        "title": "Security Assessment Experts",
+        "description": "Designing security systems, security risk analysis, operational evaluation, and agency security SOPs.",
+        "badge": "Human x Preventive"
+      },
+      {
+        "category": "Field Services",
+        "title": "Professional Security Guards",
+        "description": "Providing disciplined guard personnel for access control, area patrols, visitor monitoring, and initial incident response.",
+        "badge": "Human x Active"
+      },
+      {
+        "category": "Technology-Enabled Special Features",
+        "title": "Electronic Screening & Detection",
+        "description": "Sweeping offices, meeting rooms, and executive areas for unauthorized electronic devices or listening equipment.",
+        "badge": "Technology x Preventive"
+      },
+      {
+        "category": "Monitoring Systems",
+        "title": "CCTV & Monitoring Center Integration",
+        "description": "Installation, area access monitoring, and monitoring system integration to complement human-based security.",
+        "badge": "Technology x Active"
+      }
+    ],
+    "coverageTitle": "Coverage of Facilities & Security Areas",
+    "coverageDescription": "Services are designed to support government agencies, offices, official residences, banking, commercial areas, and national-scale MICE events.",
+    "cta": "Consult on Security Systems",
+    "bgAlt": "Security Services Background"
+  },
+  "legality": {
+    "badge": "About Us",
+    "titleLead": "Transformation Toward",
+    "titleAccent": "Integrated Services",
+    "historyLead": "The company's journey began as a CV established on",
+    "historyDate": "14 November 2011",
+    "historyMiddle": ". As the business expanded and client needs grew, the company transformed into",
+    "historyEntity": "PT. Global Inmarco Sejahtera on 28 May 2024",
+    "history2": "This transformation strengthened organizational governance to be more adaptive and ready to provide integrated solutions spanning MICE, consulting, media, and private security services",
+    "timeline1Date": "14 Nov 2011",
+    "timeline1Title": "CV. Global Inmarco",
+    "timeline1Desc": "Foundation in MICE & communication",
+    "timeline2Date": "28 May 2024",
+    "timeline2Title": "PT. Global Inmarco",
+    "timeline2Desc": "PT transformation & integrated governance",
+    "tableTitle": "Company Legality",
+    "tableLabel": "Official Data",
+    "businessStatus": "Business Entity Status",
+    "deedNo": "Notarial Deed No.",
+    "deedValue": "No 06 (dated 28 May 2024)",
+    "decree": "Ministry of Law Decree",
+    "tax": "Company NPWP",
+    "field": "Business Fields",
+    "fieldValue": "MICE, Consulting, Media, Security Services"
+  }
+}

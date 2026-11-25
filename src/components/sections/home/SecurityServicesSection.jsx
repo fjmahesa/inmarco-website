@@ -1,107 +1,106 @@
+import { useTranslation } from "react-i18next";
 import FadeInSection from "../../common/FadeInSection";
 
 // Impor file gambar background atau gambar layanan security lokal
 import bgSecurityGroup from "../../../assets/business-coach-004.webp";
 
-const coverageAreas = [
-  "Instansi Pemerintah & Rumah Dinas",
-  "Area Komersial & Properti Perusahaan",
-  "Kegiatan & Event (MICE Terintegrasi)",
-  "Kawasan & Fasilitas Publik",
-  "Perkantoran & Gedung",
-];
-
-const humanServices = [
-  {
-    title: "Garda Depan (Satpam)",
-    subtitle: "Penyediaan tenaga pengamanan profesional.",
-    details:
-      "Penjagaan akses, pengawasan lingkungan, patroli area, pengendalian pengunjung, penanganan situasi awal, dan pelaporan kejadian.",
-    icon: (
-      <svg
-        className="w-7 h-7 text-blue-600"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-        />
-      </svg>
-    ),
-  },
-  {
-    title: "Strategi & Sistem (Tenaga Ahli)",
-    subtitle: "Perancangan sistem pengamanan organisasi.",
-    details:
-      "Security assessment, penyusunan SOP, analisis risiko, evaluasi operasional, dan pengembangan pola keamanan berbasis teknologi.",
-    icon: (
-      <svg
-        className="w-7 h-7 text-blue-600"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"
-        />
-      </svg>
-    ),
-  },
-];
-
-const techServices = [
-  {
-    title: "Deteksi Elektronik (Security Sweep)",
-    details:
-      "Pemeriksaan dan pembersihan ruang kerja, rapat, dan pimpinan dari potensi perangkat elektronik yang tidak semestinya. Meningkatkan keamanan informasi pada area bersensitivitas tinggi.",
-    badge: "Teknologi Sweep",
-    icon: (
-      <svg
-        className="w-7 h-7 text-sky-600"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-        />
-      </svg>
-    ),
-  },
-  {
-    title: "CCTV & Monitoring Center",
-    details:
-      "Instalasi, pemantauan area, pengawasan akses, dan integrasi sistem monitoring untuk melengkapi pengamanan berbasis sumber daya manusia.",
-    badge: "Surveillance System",
-    icon: (
-      <svg
-        className="w-7 h-7 text-sky-600"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
-        />
-      </svg>
-    ),
-  },
-];
-
 export default function SecurityServicesSection() {
+  const { t } = useTranslation("homeDigital");
+
+  const coverageAreas = [
+    t("security.hero.coverage.0"),
+    t("security.hero.coverage.1"),
+    t("security.hero.coverage.2"),
+    t("security.hero.coverage.3"),
+    t("security.hero.coverage.4"),
+  ];
+
+  const humanServices = [
+    {
+      title: t("security.human.items.0.title"),
+      subtitle: t("security.human.items.0.subtitle"),
+      details: t("security.human.items.0.details"),
+      icon: (
+        <svg
+          className="w-7 h-7 text-blue-600"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+          />
+        </svg>
+      ),
+    },
+    {
+      title: t("security.human.items.1.title"),
+      subtitle: t("security.human.items.1.subtitle"),
+      details: t("security.human.items.1.details"),
+      icon: (
+        <svg
+          className="w-7 h-7 text-blue-600"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"
+          />
+        </svg>
+      ),
+    },
+  ];
+
+  const techServices = [
+    {
+      title: t("security.tech.items.0.title"),
+      details: t("security.tech.items.0.details"),
+      badge: t("security.tech.items.0.badge"),
+      icon: (
+        <svg
+          className="w-7 h-7 text-sky-600"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+          />
+        </svg>
+      ),
+    },
+    {
+      title: t("security.tech.items.1.title"),
+      details: t("security.tech.items.1.details"),
+      badge: t("security.tech.items.1.badge"),
+      icon: (
+        <svg
+          className="w-7 h-7 text-sky-600"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
+          />
+        </svg>
+      ),
+    },
+  ];
+
   return (
     <section
       id="security-services"
@@ -118,7 +117,7 @@ export default function SecurityServicesSection() {
             <div className="relative h-[480px] sm:h-[420px] lg:h-[460px] w-full overflow-hidden">
               <img
                 src={bgSecurityGroup}
-                alt="Jasa Pengamanan Swasta"
+                alt={t("security.hero.alt")}
                 className="w-full h-full object-cover object-center filter brightness-[0.9]"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-navy-950/90 via-navy-950/75 to-navy-950/40 sm:to-transparent" />
@@ -128,28 +127,31 @@ export default function SecurityServicesSection() {
             <div className="absolute inset-0 p-6 sm:p-10 lg:p-12 flex flex-col justify-between max-w-2xl text-white">
               <div className="space-y-4">
                 <span className="inline-block text-[10px] sm:text-xs font-extrabold uppercase tracking-widest px-3.5 py-1.5 rounded-full bg-sky-500/20 text-sky-300 border border-sky-400/30 backdrop-blur-md">
-                  Security Unit
+                  {t("security.hero.badge")}
                 </span>
 
                 <h2 className="text-3xl sm:text-5xl font-black tracking-tight leading-tight">
-                  Jasa Pengamanan <span className="text-sky-400">Swasta</span>
+                  {t("security.hero.titleLead")}{" "}
+                  <span className="text-sky-400">
+                    {t("security.hero.titleAccent")}
+                  </span>
                 </h2>
 
                 {/* 3 Pilar Utama Badge */}
                 <div className="grid grid-cols-3 gap-2 sm:gap-4 pt-2 border-t border-white/20">
                   <div className="text-center sm:text-left space-y-1">
                     <p className="text-xs sm:text-sm font-bold text-sky-300">
-                      Profesionalisme
+                      {t("security.hero.pillar1")}
                     </p>
                   </div>
                   <div className="text-center sm:text-left space-y-1">
                     <p className="text-xs sm:text-sm font-bold text-sky-300">
-                      Disiplin
+                      {t("security.hero.pillar2")}
                     </p>
                   </div>
                   <div className="text-center sm:text-left space-y-1">
                     <p className="text-xs sm:text-sm font-bold text-sky-300">
-                      Implementasi Teknologi
+                      {t("security.hero.pillar3")}
                     </p>
                   </div>
                 </div>
@@ -158,7 +160,7 @@ export default function SecurityServicesSection() {
               {/* Area Layanan List */}
               <div className="space-y-2 pt-4">
                 <p className="text-[10px] sm:text-xs font-extrabold uppercase tracking-wider text-slate-300 font-mono">
-                  Cakupan Fasilitas & Area Layanan:
+                  {t("security.hero.coverageLabel")}
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {coverageAreas.map((area, idx) => (
@@ -180,11 +182,13 @@ export default function SecurityServicesSection() {
           <FadeInSection>
             <div className="text-center max-w-3xl mx-auto space-y-2">
               <span className="text-xs font-extrabold uppercase tracking-widest text-blue-600 bg-blue-50 px-4 py-1.5 rounded-full border border-blue-200">
-                Human & Operational Strategy
+                {t("security.human.badge")}
               </span>
               <h3 className="text-2xl sm:text-4xl font-black text-navy-900 tracking-tight">
-                Pengamanan Berbasis{" "}
-                <span className="text-blue-600">Manusia & Strategi</span>
+                {t("security.human.titleLead")}{" "}
+                <span className="text-blue-600">
+                  {t("security.human.titleAccent")}
+                </span>
               </h3>
             </div>
           </FadeInSection>
@@ -208,14 +212,14 @@ export default function SecurityServicesSection() {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
-                      Meliputi: {item.details}
+                      {t("security.human.includes")} {item.details}
                     </p>
                   </div>
 
                   <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-400">
-                    <span>Sertifikasi Kualifikasi</span>
+                    <span>{t("security.human.certification")}</span>
                     <span className="text-blue-600">
-                      • Layanan Lapangan & System Assessment
+                      • {t("security.human.serviceScope")}
                     </span>
                   </div>
                 </div>
@@ -229,11 +233,11 @@ export default function SecurityServicesSection() {
           <FadeInSection>
             <div className="text-center max-w-3xl mx-auto space-y-2">
               <span className="text-xs font-extrabold uppercase tracking-widest text-sky-600 bg-sky-50 px-4 py-1.5 rounded-full border border-sky-200">
-                Advanced Surveillance & Sweep
+                {t("security.tech.badge")}
               </span>
               <h3 className="text-2xl sm:text-4xl font-black text-navy-900 tracking-tight">
-                Keamanan Berbasis{" "}
-                <span className="text-sky-600">Teknologi & Deteksi</span>
+                {t("security.tech.titleLead")}{" "}
+                <span className="text-sky-600">{t("security.tech.titleAccent")}</span>
               </h3>
             </div>
           </FadeInSection>
@@ -262,9 +266,9 @@ export default function SecurityServicesSection() {
                   </div>
 
                   <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-400">
-                    <span>High Sensitivity Protection</span>
+                    <span>{t("security.tech.footerLeft")}</span>
                     <span className="text-sky-600">
-                      • Electronic Security Feature
+                      • {t("security.tech.footerRight")}
                     </span>
                   </div>
                 </div>

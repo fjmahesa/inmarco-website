@@ -1,0 +1,66 @@
+{
+  "hero": {
+    "badge": "Our Capabilities",
+    "title": "Layanan Layanan Terintegrasi",
+    "description": "Mitra strategis terpercaya dengan tata kelola profesional, menghadirkan solusi terpadu untuk kebutuhan instansi pemerintah dan korporasi."
+  },
+  "services": {
+    "scopeTitle": "Cakupan Layanan:",
+    "mice": {
+      "badge": "Event & MICE",
+      "title": "MICE & Event Management",
+      "subtitle": "Penyelenggaraan Event Hybrid, Konferensi, & Pameran Profesional",
+      "description": "Layanan perencanaan dan eksekusi acara skala besar secara komprehensif. Mulai dari pameran nasional, peluncuran produk, rapat kerja pemerintah, hingga manajemen event hybrid terkoneksi.",
+      "features": [
+        "Manajemen Event Hybrid & Virtual",
+        "Pameran & Expo Industri",
+        "Konferensi & Seminar Nasional/Internasional",
+        "Produksi Stage, Lighting, & Sound System"
+      ]
+    },
+    "digitalComm": {
+      "badge": "Media & Digital",
+      "title": "Digital Communication & Branding",
+      "subtitle": "Strategi Media Terukur, Personal Branding, & Engagement",
+      "description": "Membangun dan memperkuat persepsi publik terhadap lembaga/korporasi melalui kampanye media digital, strategi komunikasi krisis, manajemen media sosial, serta hubungan pers.",
+      "features": [
+        "Digital Campaign & Social Media Management",
+        "Personal Branding & Executive Public Relations",
+        "Media Monitoring & Crisis Communication",
+        "Produksi Konten Kreatif & Video Profil"
+      ]
+    },
+    "security": {
+      "badge": "Pengamanan Swasta",
+      "title": "Jasa Pengamanan Swasta (Security Services)",
+      "subtitle": "Proteksi Aset, SDM Disiplin, & Teknologi Deteksi Modern",
+      "description": "Penyediaan personel Satpam bersertifikat resmi, Tenaga Ahli Security Risk Assessment, sistem pemantauan terpadu, hingga pembersihan ruangan berbasis elektronik (anti-penyadapan).",
+      "features": [
+        "Penyediaan & Pengelolaan Personel Satpam (BUJP)",
+        "Security Risk Assessment & Audit Kelayakan",
+        "Electronic Countermeasures (Sweep Anti-Penyadapan)",
+        "Sistem Pemantauan CCTV & Akses Kontrol Digital"
+      ]
+    },
+    "consulting": {
+      "badge": "Konsultasi Bisnis",
+      "title": "Corporate & Management Consulting",
+      "subtitle": "Solusi Tata Kelola Layanan Terintegrasi & Efisiensi Operasional",
+      "description": "Dukungan konsultasi strategis bagi instansi pemerintah dan swasta untuk meningkatkan efisiensi tata kelola operasional, analisis kepatuhan, serta optimalisasi sumber daya.",
+      "features": [
+        "Tata Kelola Operasional & Standar Prosedur (SOP)",
+        "Konsultasi Manajemen Risiko & Kepatuhan",
+        "Optimalisasi Alokasi Sumber Daya Manusia",
+        "Perencanaan Program Kerja Terintegrasi"
+      ]
+    }
+  },
+  "card": {
+    "consultation": "Konsultasi Layanan"
+  },
+  "cta": {
+    "title": "Butuh Solusi Khusus untuk Instansi Anda?",
+    "description": "Tim profesional kami siap membantu merancang dan mengeksekusi program kerja terintegrasi sesuai kebutuhan spesifik Anda.",
+    "button": "Pelajari Lebih Lanjut Tentang Kami"
+  }
+}

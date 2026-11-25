@@ -1,0 +1,49 @@
+{
+  "contact": {
+    "badge": "Contact Us",
+    "headingLead": "Hubungi",
+    "headingAccent": "Kami",
+    "description": "Hubungi kami untuk informasi detail mengenai jasa pengamanan swasta, komunikasi digital, Konsultan strategis, MICE & event organizer.",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "addressValue": "Kantor Operasional: Menara MTH Lantai 15 Suite 1508 - Jalan MT Haryono Tebet Jakarta Selatan"
+  },
+  "form": {
+    "name": "Nama",
+    "namePlaceholder": "Nama Lengkap",
+    "phone": "No. HP / WhatsApp",
+    "email": "Alamat Email",
+    "service": "Layanan yang Dibutuhkan",
+    "servicePlaceholder": "Pilih Layanan",
+    "serviceOptions": {
+      "digital": "Digital Communication",
+      "event": "Event Management / MICE",
+      "consulting": "Research & Consulting",
+      "security": "Jasa Pengamanan Swasta",
+      "other": "Lainnya"
+    },
+    "message": "Pesan",
+    "messagePlaceholder": "Tuliskan kebutuhan atau pertanyaan Anda...",
+    "noService": "Tidak Memilih",
+    "submit": "Submit",
+    "sending": "Mengirim..."
+  },
+  "modal": {
+    "successTitle": "Pesan Terkirim!",
+    "successMessage": "Terima kasih telah menghubungi kami. Kami akan segera merespons pesan Anda.",
+    "failureTitle": "Gagal Mengirim",
+    "failureMessage": "Gagal mengirim pesan. Silakan periksa kembali data Anda.",
+    "errorTitle": "Terjadi Kesalahan",
+    "errorMessage": "Terjadi masalah koneksi ke server. Silakan periksa jaringan Anda.",
+    "close": "Tutup"
+  },
+  "bottom": {
+    "tagline": "Integrated Marketing Communication & Event Agency",
+    "home": "Home",
+    "about": "About Us",
+    "service": "Service",
+    "clients": "Our Client",
+    "rights": "All Rights Reserved."
+  }
+}

@@ -1,12 +1,15 @@
+import { useTranslation } from "react-i18next";
 import FadeInSection from "../../common/FadeInSection";
 
-const corporateLogos = [
-  { name: "Nusantara Infrastructure", src: "/nusantara-infrastruktur.webp" },
-  { name: "BII Maybank", src: "/biimaybank.webp" },
-  { name: "Orico Balimor Finance", src: "/client-1.webp" },
-];
-
 export default function CorporateLogos() {
+  const { t } = useTranslation("homeLists");
+
+  const corporateLogos = [
+    { name: t("corporate.logos.0.name"), src: "/nusantara-infrastruktur.webp" },
+    { name: t("corporate.logos.1.name"), src: "/biimaybank.webp" },
+    { name: t("corporate.logos.2.name"), src: "/client-1.webp" },
+  ];
+
   // Duplikasi array logo agar animasi infinite scroll bergulir tanpa jeda
   const duplicatedLogos = [
     ...corporateLogos,
@@ -20,14 +23,13 @@ export default function CorporateLogos() {
         {/* Header Section */}
         <FadeInSection className="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
           <span className="text-xs font-extrabold uppercase tracking-widest text-blue-600 bg-blue-50 px-4 py-1.5 rounded-full border border-blue-100">
-            Sektor Swasta & BUMD
+            {t("corporate.eyebrow")}
           </span>
           <h2 className="mt-4 text-3xl sm:text-5xl font-black text-navy-900 tracking-tight">
-            Corporate
+            {t("corporate.title")}
           </h2>
           <p className="mt-3 text-xs sm:text-base text-slate-600 font-medium">
-            Dipercaya oleh berbagai perusahaan korporasi, perbankan, dan BUMD
-            terkemuka.
+            {t("corporate.description")}
           </p>
         </FadeInSection>
 

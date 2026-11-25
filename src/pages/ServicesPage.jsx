@@ -1,126 +1,125 @@
+import { useTranslation } from "react-i18next";
 import FadeInSection from "../components/common/FadeInSection";
 import { Link } from "react-router-dom";
 
-const servicesList = [
-  {
-    id: "mice",
-    badge: "Event & MICE",
-    title: "MICE & Event Management",
-    subtitle: "Penyelenggaraan Event Hybrid, Konferensi, & Pameran Profesional",
-    description:
-      "Layanan perencanaan dan eksekusi acara skala besar secara komprehensif. Mulai dari pameran nasional, peluncuran produk, rapat kerja pemerintah, hingga manajemen event hybrid terkoneksi.",
-    features: [
-      "Manajemen Event Hybrid & Virtual",
-      "Pameran & Expo Industri",
-      "Konferensi & Seminar Nasional/Internasional",
-      "Produksi Stage, Lighting, & Sound System",
-    ],
-    icon: (
-      <svg
-        className="w-7 h-7 text-sky-400"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"
-        />
-      </svg>
-    ),
-  },
-  {
-    id: "digital-comm",
-    badge: "Media & Digital",
-    title: "Digital Communication & Branding",
-    subtitle: "Strategi Media Terukur, Personal Branding, & Engagement",
-    description:
-      "Membangun dan memperkuat persepsi publik terhadap lembaga/korporasi melalui kampanye media digital, strategi komunikasi krisis, manajemen media sosial, serta hubungan pers.",
-    features: [
-      "Digital Campaign & Social Media Management",
-      "Personal Branding & Executive Public Relations",
-      "Media Monitoring & Crisis Communication",
-      "Produksi Konten Kreatif & Video Profil",
-    ],
-    icon: (
-      <svg
-        className="w-7 h-7 text-sky-400"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"
-        />
-      </svg>
-    ),
-  },
-  {
-    id: "security",
-    badge: "Pengamanan Swasta",
-    title: "Jasa Pengamanan Swasta (Security Services)",
-    subtitle: "Proteksi Aset, SDM Disiplin, & Teknologi Deteksi Modern",
-    description:
-      "Penyediaan personel Satpam bersertifikat resmi, Tenaga Ahli Security Risk Assessment, sistem pemantauan terpadu, hingga pembersihan ruangan berbasis elektronik (anti-penyadapan).",
-    features: [
-      "Penyediaan & Pengelolaan Personel Satpam (BUJP)",
-      "Security Risk Assessment & Audit Kelayakan",
-      "Electronic Countermeasures (Sweep Anti-Penyadapan)",
-      "Sistem Pemantauan CCTV & Akses Kontrol Digital",
-    ],
-    icon: (
-      <svg
-        className="w-7 h-7 text-sky-400"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-        />
-      </svg>
-    ),
-  },
-  {
-    id: "consulting",
-    badge: "Konsultasi Bisnis",
-    title: "Corporate & Management Consulting",
-    subtitle: "Solusi Tata Kelola Layanan Terintegrasi & Efisiensi Operasional",
-    description:
-      "Dukungan konsultasi strategis bagi instansi pemerintah dan swasta untuk meningkatkan efisiensi tata kelola operasional, analisis kepatuhan, serta optimalisasi sumber daya.",
-    features: [
-      "Tata Kelola Operasional & Standar Prosedur (SOP)",
-      "Konsultasi Manajemen Risiko & Kepatuhan",
-      "Optimalisasi Alokasi Sumber Daya Manusia",
-      "Perencanaan Program Kerja Terintegrasi",
-    ],
-    icon: (
-      <svg
-        className="w-7 h-7 text-sky-400"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-        />
-      </svg>
-    ),
-  },
-];
-
 export default function ServicesPage() {
+  const { t } = useTranslation("servicesPage");
+
+  const servicesList = [
+    {
+      id: "mice",
+      badge: t("services.mice.badge"),
+      title: t("services.mice.title"),
+      subtitle: t("services.mice.subtitle"),
+      description: t("services.mice.description"),
+      features: [
+        t("services.mice.features.0"),
+        t("services.mice.features.1"),
+        t("services.mice.features.2"),
+        t("services.mice.features.3"),
+      ],
+      icon: (
+        <svg
+          className="w-7 h-7 text-sky-400"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"
+          />
+        </svg>
+      ),
+    },
+    {
+      id: "digital-comm",
+      badge: t("services.digitalComm.badge"),
+      title: t("services.digitalComm.title"),
+      subtitle: t("services.digitalComm.subtitle"),
+      description: t("services.digitalComm.description"),
+      features: [
+        t("services.digitalComm.features.0"),
+        t("services.digitalComm.features.1"),
+        t("services.digitalComm.features.2"),
+        t("services.digitalComm.features.3"),
+      ],
+      icon: (
+        <svg
+          className="w-7 h-7 text-sky-400"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"
+          />
+        </svg>
+      ),
+    },
+    {
+      id: "security",
+      badge: t("services.security.badge"),
+      title: t("services.security.title"),
+      subtitle: t("services.security.subtitle"),
+      description: t("services.security.description"),
+      features: [
+        t("services.security.features.0"),
+        t("services.security.features.1"),
+        t("services.security.features.2"),
+        t("services.security.features.3"),
+      ],
+      icon: (
+        <svg
+          className="w-7 h-7 text-sky-400"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+          />
+        </svg>
+      ),
+    },
+    {
+      id: "consulting",
+      badge: t("services.consulting.badge"),
+      title: t("services.consulting.title"),
+      subtitle: t("services.consulting.subtitle"),
+      description: t("services.consulting.description"),
+      features: [
+        t("services.consulting.features.0"),
+        t("services.consulting.features.1"),
+        t("services.consulting.features.2"),
+        t("services.consulting.features.3"),
+      ],
+      icon: (
+        <svg
+          className="w-7 h-7 text-sky-400"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+          />
+        </svg>
+      ),
+    },
+  ];
+
   return (
     <main className="pt-28 pb-20 bg-slate-50 min-h-screen">
       {/* Hero Banner Section Services */}
@@ -129,15 +128,13 @@ export default function ServicesPage() {
         <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 relative z-10 text-center">
           <FadeInSection>
             <span className="text-[10px] sm:text-xs font-extrabold uppercase tracking-widest text-sky-300 bg-sky-500/10 border border-sky-400/20 px-3.5 py-1.5 rounded-full backdrop-blur-md">
-              Our Capabilities
+              {t("hero.badge")}
             </span>
             <h1 className="text-3xl sm:text-5xl font-black tracking-tight mt-4 mb-4">
-              Layanan Layanan Terintegrasi
+              {t("hero.title")}
             </h1>
             <p className="text-xs sm:text-base text-slate-300 max-w-2xl mx-auto leading-relaxed">
-              Mitra strategis terpercaya dengan tata kelola profesional,
-              menghadirkan solusi terpadu untuk kebutuhan instansi pemerintah
-              dan korporasi.
+              {t("hero.description")}
             </p>
           </FadeInSection>
         </div>
@@ -178,7 +175,7 @@ export default function ServicesPage() {
                   {/* Fitur/Cakupan Layanan */}
                   <div className="pt-2">
                     <h3 className="text-xs font-bold text-navy-900 uppercase tracking-wider mb-2.5">
-                      Cakupan Layanan:
+                      {t("services.scopeTitle")}
                     </h3>
                     <ul className="space-y-2">
                       {service.features.map((feature, idx) => (
@@ -214,7 +211,7 @@ export default function ServicesPage() {
                     rel="noreferrer"
                     className="text-xs font-bold text-navy-950 group-hover:text-sky-600 flex items-center gap-1.5 transition-colors"
                   >
-                    Konsultasi Layanan
+                    {t("card.consultation")}
                     <svg
                       className="w-4 h-4 transition-transform group-hover:translate-x-1"
                       fill="none"
@@ -242,18 +239,17 @@ export default function ServicesPage() {
           <div className="bg-navy-950 rounded-2xl p-8 sm:p-12 text-center text-white relative overflow-hidden">
             <div className="relative z-10 space-y-4 max-w-2xl mx-auto">
               <h2 className="text-2xl sm:text-3xl font-black tracking-tight">
-                Butuh Solusi Khusus untuk Instansi Anda?
+                {t("cta.title")}
               </h2>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                Tim profesional kami siap membantu merancang dan mengeksekusi
-                program kerja terintegrasi sesuai kebutuhan spesifik Anda.
+                {t("cta.description")}
               </p>
               <div className="pt-2">
                 <Link
                   to="/about"
                   className="inline-block px-7 py-3 text-xs font-extrabold text-navy-950 bg-sky-400 hover:bg-sky-300 rounded-xl transition-all shadow-md active:scale-95"
                 >
-                  Pelajari Lebih Lanjut Tentang Kami
+                  {t("cta.button")}
                 </Link>
               </div>
             </div>

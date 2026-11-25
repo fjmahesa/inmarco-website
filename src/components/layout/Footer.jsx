@@ -1,8 +1,11 @@
 import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import FadeInSection from "../common/FadeInSection";
 import { HashLink } from "react-router-hash-link";
 
 export default function Footer() {
+  const { t } = useTranslation("footer");
+
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -65,7 +68,7 @@ export default function Footer() {
           name: formData.name,
           phone: formData.phone,
           email: formData.email,
-          service: formData.service || "Tidak Memilih",
+          service: formData.service || t("form.noService"),
           message: formData.message,
           source_website: "INMARCO.ID",
         }),
@@ -87,19 +90,15 @@ export default function Footer() {
         setModal({
           show: true,
           success: true,
-          title: "Pesan Terkirim!",
-          message:
-            result.message ||
-            "Terima kasih telah menghubungi kami. Kami akan segera merespons pesan Anda.",
+          title: t("modal.successTitle"),
+          message: result.message || t("modal.successMessage"),
         });
       } else {
         setModal({
           show: true,
           success: false,
-          title: "Gagal Mengirim",
-          message:
-            result.message ||
-            "Gagal mengirim pesan. Silakan periksa kembali data Anda.",
+          title: t("modal.failureTitle"),
+          message: result.message || t("modal.failureMessage"),
         });
       }
     } catch (err) {
@@ -107,9 +106,8 @@ export default function Footer() {
       setModal({
         show: true,
         success: false,
-        title: "Terjadi Kesalahan",
-        message:
-          "Terjadi masalah koneksi ke server. Silakan periksa jaringan Anda.",
+        title: t("modal.errorTitle"),
+        message: t("modal.errorMessage"),
       });
     } finally {
       setLoading(false);
@@ -131,17 +129,18 @@ export default function Footer() {
             {/* Sisi Kiri: Info Kontak */}
             <div className="lg:col-span-5 space-y-6">
               <span className="text-xs font-extrabold uppercase tracking-widest text-sky-400 bg-sky-500/10 px-4 py-1.5 rounded-full border border-sky-500/20">
-                Contact Us
+                {t("contact.badge")}
               </span>
 
               <h2 className="text-3xl mt-2 sm:text-4xl font-black text-white tracking-tight">
-                Hubungi <span className="text-sky-400">Kami</span>
+                {t("contact.headingLead")}{" "}
+                <span className="text-sky-400">
+                  {t("contact.headingAccent")}
+                </span>
               </h2>
 
               <p className="text-sm text-slate-300 leading-relaxed font-normal">
-                Hubungi kami untuk informasi detail mengenai jasa pengamanan
-                swasta, komunikasi digital, Konsultan strategis, MICE & event
-                organizer.
+                {t("contact.description")}
               </p>
 
               <div className="space-y-4 pt-2">
@@ -163,7 +162,7 @@ export default function Footer() {
                   </div>
                   <div>
                     <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider">
-                      Phone
+                      {t("contact.phone")}
                     </h4>
                     <a
                       href="tel:081180001091"
@@ -192,7 +191,7 @@ export default function Footer() {
                   </div>
                   <div>
                     <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider">
-                      Email
+                      {t("contact.email")}
                     </h4>
                     <a
                       href="mailto:inmarco.global@gmail.com"
@@ -227,11 +226,10 @@ export default function Footer() {
                   </div>
                   <div>
                     <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider">
-                      Address
+                      {t("contact.address")}
                     </h4>
                     <p className="text-sm font-medium text-slate-200 leading-relaxed">
-                      Kantor Operasional: Menara MTH Lantai 15 Suite 1508 -
-                      Jalan MT Haryono Tebet Jakarta Selatan
+                      {t("contact.addressValue")}
                     </p>
                   </div>
                 </div>
@@ -244,13 +242,13 @@ export default function Footer() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">
-                      Nama
+                      {t("form.name")}
                     </label>
                     <input
                       type="text"
                       name="name"
                       required
-                      placeholder="Nama Lengkap"
+                      placeholder={t("form.namePlaceholder")}
                       value={formData.name}
                       onChange={handleChange}
                       className="w-full px-4 py-3 rounded-xl bg-navy-950 border border-slate-800 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-sky-400 transition-colors"
@@ -258,7 +256,7 @@ export default function Footer() {
                   </div>
                   <div>
                     <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">
-                      No. HP / WhatsApp
+                      {t("form.phone")}
                     </label>
                     <input
                       type="tel"
@@ -274,7 +272,7 @@ export default function Footer() {
 
                 <div>
                   <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">
-                    Alamat Email
+                    {t("form.email")}
                   </label>
                   <input
                     type="email"
@@ -289,7 +287,7 @@ export default function Footer() {
 
                 <div>
                   <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">
-                    Layanan yang Dibutuhkan
+                    {t("form.service")}
                   </label>
                   <select
                     name="service"
@@ -297,32 +295,32 @@ export default function Footer() {
                     onChange={handleChange}
                     className="w-full px-4 py-3 rounded-xl bg-navy-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-sky-400 transition-colors"
                   >
-                    <option value="">Pilih Layanan</option>
+                    <option value="">{t("form.servicePlaceholder")}</option>
                     <option value="Digital Communication">
-                      Digital Communication
+                      {t("form.serviceOptions.digital")}
                     </option>
                     <option value="Event Management / MICE">
-                      Event Management / MICE
+                      {t("form.serviceOptions.event")}
                     </option>
                     <option value="Research & Consulting">
-                      Research & Consulting
+                      {t("form.serviceOptions.consulting")}
                     </option>
                     <option value="Jasa Pengamanan Swasta">
-                      Jasa Pengamanan Swasta
+                      {t("form.serviceOptions.security")}
                     </option>
-                    <option value="Lainnya">Lainnya</option>
+                    <option value="Lainnya">{t("form.serviceOptions.other")}</option>
                   </select>
                 </div>
 
                 <div>
                   <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">
-                    Pesan
+                    {t("form.message")}
                   </label>
                   <textarea
                     name="message"
                     rows="4"
                     required
-                    placeholder="Tuliskan kebutuhan atau pertanyaan Anda..."
+                    placeholder={t("form.messagePlaceholder")}
                     value={formData.message}
                     onChange={handleChange}
                     className="w-full px-4 py-3 rounded-xl bg-navy-950 border border-slate-800 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-sky-400 transition-colors resize-none"
@@ -334,7 +332,7 @@ export default function Footer() {
                   disabled={loading}
                   className="w-full sm:w-auto px-8 py-3.5 text-xs font-extrabold text-navy-950 bg-sky-400 hover:bg-sky-300 disabled:bg-slate-600 rounded-xl shadow-lg shadow-sky-400/20 transition-all transform hover:-translate-y-0.5 active:translate-y-0 cursor-pointer flex items-center justify-center gap-2"
                 >
-                  {loading ? "Mengirim..." : "Submit"}
+                  {loading ? t("form.sending") : t("form.submit")}
                 </button>
               </form>
             </div>
@@ -347,35 +345,33 @@ export default function Footer() {
             <span className="text-xl font-extrabold tracking-tight text-white">
               INMARCO<span className="text-sky-400">.ID</span>
             </span>
-            <p className="mt-1 text-slate-400">
-              Integrated Marketing Communication & Event Agency
-            </p>
+            <p className="mt-1 text-slate-400">{t("bottom.tagline")}</p>
           </div>
 
           <div className="flex flex-wrap items-center justify-center gap-6 font-semibold">
             <a href="/" className="hover:text-sky-400 transition-colors">
-              Home
+              {t("bottom.home")}
             </a>
             <a href="/about" className="hover:text-sky-400 transition-colors">
-              About Us
+              {t("bottom.about")}
             </a>
             <a
               href="/services"
               className="hover:text-sky-400 transition-colors"
             >
-              Service
+              {t("bottom.service")}
             </a>
 
             <HashLink
               to="/#client"
               className="hover:text-sky-400 transition-colors"
             >
-              Our Client
+              {t("bottom.clients")}
             </HashLink>
           </div>
 
           <p className="text-center md:text-right">
-            © {new Date().getFullYear()} INMARCO.ID. All Rights Reserved.
+            © {new Date().getFullYear()} INMARCO.ID. {t("bottom.rights")}
           </p>
         </div>
       </div>
@@ -440,7 +436,7 @@ export default function Footer() {
               onClick={closeModal}
               className="w-full py-3 px-4 text-xs font-bold text-white bg-slate-800 hover:bg-slate-700 rounded-xl transition-colors cursor-pointer"
             >
-              Tutup
+              {t("modal.close")}
             </button>
           </div>
         </div>
